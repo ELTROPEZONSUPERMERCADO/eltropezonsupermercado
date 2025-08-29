@@ -1,0 +1,1084 @@
+/*bootstrap */
+/* Bootstrap  barra navegacion CSS */
+
+/* Si quieres un color diferente para los elementos activos: */
+
+
+/* Para el dropdown, si también quieres que los items del dropdown sean negros */
+
+
+
+
+/* reset de css */
+
+
+/* esto esta bueno a apllica 
+.grid-novedades-video {
+display: grid;
+grid-template-columns: repeat(3, 1fr);  crea 4 columnas de igual tamaño 
+grid-template-rows: repeat(2, 400px);  crea 2 filas de igual tamaño 
+justify-items: center;
+align-items: end;
+justify-content: space-around;
+align-content: space-between;
+
+; */
+
+/* titulo H */
+
+
+
+
+
+
+/* alineadioon imagenes */
+
+
+
+
+
+/* body --------------------------------------------------------------------*/
+
+
+
+
+/* estilo aplicado padre ------------------------------------------- */
+
+ /* estilo aplicado hijo */
+ 
+    
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+/*bootstrap */
+/* Bootstrap  barra navegacion CSS */
+
+/* Si quieres un color diferente para los elementos activos: */
+
+
+/* Para el dropdown, si también quieres que los items del dropdown sean negros */
+.dropdown-menu .dropdown-item {
+    color: black;
+}
+
+
+
+/* reset de css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* hace que el ancho y alto de los elementos incluya el padding y el borde */
+}
+
+/* esto esta bueno a apllica 
+.grid-novedades-video {
+display: grid;
+grid-template-columns: repeat(3, 1fr);  crea 4 columnas de igual tamaño 
+grid-template-rows: repeat(2, 400px);  crea 2 filas de igual tamaño 
+justify-items: center;
+align-items: end;
+justify-content: space-around;
+align-content: space-between;
+
+; */
+
+/* titulo H */
+
+h1 {color: rgb(12, 23, 45); /* puede ser rgba , hexageximal  nombre y rgb*/
+    font-size: 40px;/*tamaño de letra unidades de medida px, em rem %*/
+     text-align: center;
+    font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+margin-bottom: 5%;
+margin-top: 5%;
+ }
+
+
+
+
+/* alineadioon imagenes */
+
+.alineacion-imagen{  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  
+}
+
+
+
+
+/* body --------------------------------------------------------------------*/
+
+
+
+
+/* estilo aplicado padre ------------------------------------------- */
+section {
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+ /* estilo aplicado hijo */
+ 
+    
+ 
+
+ 
+
+ /* header----------------------------------------- */
+header img {
+    width: 60px; /* ancho del logo */
+    height: 60px; /* alto del logo */
+    border-radius: 50%; /* hace que el logo sea redondo */
+    margin: 10px; /* margen alrededor del logo */
+    display: block; /* hace que el logo se muestre como un bloque */
+    margin-left: auto; /* centra el logo horizontalmente */}
+
+    header{
+       
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+/* estilos de nav */
+nav {
+    background-color: #000000; /* color de fondo del nav */
+    color: rgb(255, 255, 255); /* color del texto del nav */
+    padding: 10px; /* espacio interno del nav */
+    margin: auto; /* centra el nav horizontalmente */
+    text-align: center; /* centra el texto dentro del nav */
+}  
+
+
+nav a {
+    
+    padding: 10px; /* espacio interno de los enlaces */
+    margin: 5px; /* margen alrededor de los enlaces */
+}
+
+
+/* whatapp de costado --------------------------------------- */
+
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-button img {
+    width: 60px; /* Ajusta el tamaño del logo */
+    height: auto;
+    border-radius: 50%; /* Hace que el logo sea circular */
+    
+}
+
+
+.whatsapp-button:hover img {
+    transform: scale(1.1); /* Pequeño aumento al pasar el ratón */
+    transition: transform 0.2s ease-in-out;
+}
+
+
+
+
+
+/* para footer -----------------------------------------------------------------------------------------*/
+.logo-footer {
+    width: 50px; /* ancho del logo */
+    height: 50px; /* alto del logo */
+    border-radius: 50%; /* hace que el logo sea redondo */
+    display: inline-block; /* hace que el logo se muestre en línea con otros elementos */
+  position: relative; /* permite posicionar el logo dentro del footer */
+
+   
+  
+}
+
+    .logo-redes { width: 20px; /* ancho del logo */
+    height: 20px; /* alto del logo */   
+    border-radius: 50%; /* hace que el logo sea redondo */
+    
+    margin: 5px; /* margen alrededor del logo */
+    display:ruby-base 
+}
+
+
+
+
+footer {
+    background-color: #000000;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  
+}
+
+a {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contenedor-footer{
+color: rgb(255, 255, 255);
+        height: auto;
+ 
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    
+}
+
+.contenedor-footer-horario{
+   justify-content: center;
+   
+
+}
+
+.contenedor-footer-pago{
+   
+justify-content: right;
+}
+
+.contenedor-footer-redes{
+   
+justify-content: left;
+}
+   
+
+/* en el index--------------------------------------------------------------------------------------- */
+
+.contenedor-index{
+display: grid;
+grid-template-areas:
+"texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1 " 
+"foto1 foto1 foto1 foto1 foto1 foto1 foto1 foto1"
+"texto2 texto2 texto2 texto2 texto2 texto2 texto2 texto2"
+"logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8"
+"texto3 texto3 texto3 texto3 texto3 texto3 texto3 texto3"
+"sector1 sector1 sector1 sector1 sector1 sector1 sector1 sector1"
+
+;
+grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% ; 
+grid-template-rows: 100px 500px 100px 100px 50px 600px;
+justify-items: center; /* define las filas */
+align-items: center; /* define las columnas */
+justify-content: center; /* centra el contenido horizontalmente */
+ 
+}
+.contenedor-index img {
+    width: 90%; /* ancho de la imagen */
+    height: 90%; /* alto automático para mantener la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    margin: 10px; /* margen alrededor de la imagen */
+}
+
+.tituloprincipal {
+    grid-area: texto1;
+    color: rgb(0, 0, 0); /* color del texto */
+    text-align: center; /* texto centrado */
+    font-size: 30px; /* tamaño de la fuente */
+    font-weight: bold; /* negrita */
+    margin-bottom: 15px; /* margen inferior */
+}
+
+.imagen-frentenoche {
+
+    grid-area: foto1; /* área de la cuadrícula */
+      
+     }
+
+.titulo-marcas{
+    grid-area: texto2;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+.logo-marcas1 {
+    grid-area: logo1;
+    
+}
+
+.logo-marcas2 {
+    grid-area: logo2;
+    
+}
+
+.logo-marcas3 {
+    grid-area: logo3;
+    
+}
+
+.logo-marcas4 {
+    grid-area: logo4;
+    
+}
+
+.logo-marcas5 {
+    grid-area: logo5;
+    
+}
+
+.logo-marcas6 {
+    grid-area: logo6;
+    
+}
+
+.logo-marcas7 {
+    grid-area: logo7;
+    
+}
+
+.logo-marcas8 {
+    grid-area: logo8;
+    
+}
+
+.titulo-local{
+
+    grid-area: texto3;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    
+   
+}
+
+.sectores1 {
+    grid-area: sector1;
+    top: 0;
+     justify-items:flex-start; /* alinea el contenido al inicio de la celda */
+align-items:flex-start; /* alinea el contenido al inicio de la celda */
+     display: flex; /* usa flexbox para alinear el contenido */
+     flex-direction: column; /* organiza los elementos en una columna */
+     align-items: center; /* centra los elementos horizontalmente */
+     justify-content: center; /* centra los elementos verticalmente */
+     width: 40%; /* ancho del sector */
+     height: 40%; /* alto automático para mantener la proporción */
+}
+
+
+
+
+
+
+
+/* inicio en rama historia----------------------------------------------------------------------- */
+
+.contenedor-historia{
+display: grid;
+grid-template-areas:
+"texto4 texto4  "
+"subtexto1 subtexto1" 
+"antiguo1 parrafo1"
+"subtexto2 subtexto2" 
+"parrafo2 antiguo2"
+"subtexto3 subtexto3" 
+"antiguo3 parrafo3"
+;
+grid-template-columns: 
+40% 40% ; 
+grid-template-rows: 150px 100px 300px 100px 300px 100px 300px;
+justify-items: center; /* define las filas */
+align-items: center; /* define las columnas */
+justify-content: center; /* centra el contenido horizontalmente */
+ 
+}
+
+.contenedor-historia img {
+    width: 80%; /* ancho de la imagen */
+    height: 80%; /* alto automático para mantener la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    margin: 10px; /* margen alrededor de la imagen */
+}
+
+.contenedor-historia p {
+    margin: 10px;
+}
+.titulo-historia {
+    grid-area: texto4;
+    color: rgb(0, 0, 0); /* color del texto */
+    text-align: center; /* texto centrado */
+    font-size: 30px; /* tamaño de la fuente */
+    font-weight: bold; /* negrita */
+    margin-bottom: 15px; /* margen inferior */
+   
+}
+
+.titulo-epocas1{
+   
+ grid-area: subtexto1;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.imagen-historia1 {
+    grid-area: antiguo1;
+}
+
+.parrafohistoria1{
+    grid-area: parrafo1;
+}
+
+.titulo-epocas2{
+   
+ grid-area: subtexto2;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+  
+
+
+}
+
+
+.imagen-historia2 {
+    grid-area: antiguo2;
+}
+
+.parrafohistoria2{
+    grid-area: parrafo2;
+}
+
+.titulo-epocas3{
+   
+ grid-area: subtexto3;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+
+}
+
+
+.imagen-historia3 {
+    grid-area: antiguo3;
+}
+
+.parrafohistoria3{
+    grid-area: parrafo3;
+}
+
+/* sector productos------------------------------------------------------------------------------------ */
+.contenedor-productos{
+display: grid;
+grid-template-areas:
+"texto5 texto5 texto5 texto5"
+"subtexto4 subtexto4 subtexto4 subtexto4" 
+"foto2 foto3 foto4 foto5"
+"subtexto5 subtexto5 subtexto5 subtexto5" 
+"foto6 foto7 foto8 foto9"
+"subtexto6 subtexto6 subtexto6 subtexto6" 
+"foto10 foto11 foto12 foto13"
+"subtexto7 subtexto7 subtexto7 subtexto7" 
+"foto14 foto15 foto16 foto17"
+;
+grid-template-columns: 
+20% 20% 20% 20% ; 
+grid-template-rows: 100px 50px 300px 50px 300px 50px 300px 50px 300px;
+justify-items: center; /* define las filas */
+align-items: center; /* define las columnas */
+justify-content: center; /* centra el contenido horizontalmente */
+ 
+}
+
+.contenedor-productos img {
+    width: 90%; /* ancho de la imagen */
+    height: 90%; /* alto automático para mantener la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    margin: 7px; /* margen alrededor de la imagen */
+}
+
+.titulo-productos {
+    grid-area: texto5;
+    color: rgb(0, 0, 0); /* color del texto */
+    text-align: center; /* texto centrado */
+    font-size: 30px; /* tamaño de la fuente */
+    font-weight: bold; /* negrita */
+    margin-bottom: 15px; /* margen inferior */
+   
+}
+
+.titulo-sector1{
+    grid-area: subtexto4;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.titulo-sector2{
+    grid-area: subtexto5;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.titulo-sector3{
+    grid-area: subtexto6;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.titulo-sector4{
+    grid-area: subtexto7;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.imagen-productos1 {
+    grid-area: foto2;
+}
+
+.imagen-productos2 {
+    grid-area: foto3;
+}
+
+.imagen-productos3 {
+    grid-area: foto4;
+}
+.imagen-productos4 {
+    grid-area: foto5;
+}
+.imagen-productos5 {
+    grid-area: foto6;
+}
+.imagen-productos6 {
+    grid-area: foto7;
+}
+.imagen-productos7 {
+    grid-area: foto8;
+}
+.imagen-productos8 {
+    grid-area: foto9;
+}
+.imagen-productos9 {
+    grid-area: foto10;
+}
+.imagen-productos10 {
+    grid-area: foto11;
+}
+.imagen-productos11 {
+    grid-area: foto12;
+}
+.imagen-productos12 {
+    grid-area: foto13;
+}
+.imagen-productos13 {
+    grid-area: foto14;
+}
+.imagen-productos14 {
+    grid-area: foto15;
+}
+.imagen-productos15 {
+    grid-area: foto16;
+}
+.imagen-productos16 {
+    grid-area: foto17;
+}
+
+
+    /* sector novedades------------------------------------------------------------------------------------ */
+
+.contenedor-novedades{
+display: grid;
+grid-template-areas:
+"texto6 texto6 texto6 "
+"foto18 foto19 foto20 "
+"subtexto8 subtexto8 subtexto8"
+"video1 video1 video1"
+;
+grid-template-columns: 
+26% 26% 26% ; 
+grid-template-rows: 100px  300px 50px 300px ;
+justify-items: center; /* define las filas */
+align-items: center; /* define las columnas */
+justify-content: center; /* centra el contenido horizontalmente */
+ 
+}
+
+.contenedor-novedades img {
+    width: 90%; /* ancho de la imagen */
+    height: 90%; /* alto automático para mantener la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    margin: 7px; /* margen alrededor de la imagen */
+}
+
+.titulo-novedades {
+    grid-area: texto6;
+    color: rgb(0, 0, 0); /* color del texto */
+    text-align: center; /* texto centrado */
+    font-size: 30px; /* tamaño de la fuente */
+    font-weight: bold; /* negrita */
+    margin-bottom: 15px; /* margen inferior */
+   
+}
+
+    .novedades-img1{
+    grid-area: foto18;
+    }
+    .novedades-img2{
+    grid-area: foto19;
+    }
+    .novedades-img3{
+    grid-area: foto20;
+    }
+
+
+  .texto-novedades {
+  grid-area: subtexto8;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+ .video-novedades {
+    grid-area: video1;
+  position: relative; /* Importante para el cálculo del padding */
+  width: 100%; /* O el ancho que desees para el contenedor del video */
+  max-width: 560px; /* Para que no se agrande demasiado en pantallas grandes */
+  margin: 0 auto; /* Centra el video */
+}
+.video-novedades iframe {
+  position:relative; /* Fija el video en la pantalla */
+  left: 0;
+ top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+ 
+
+
+/* sector contacto -------------------------------------------------------------------*/
+
+.contenedor-contacto {
+    display: grid;
+    grid-template-areas:
+    "texto9 texto9 texto9"
+    "subtexto9 subtexto9 subtexto9"
+    "formulario formulario formulario"
+    "subtexto10 subtexto10 subtexto10"
+    "mapa mapa mapa"
+    "subtexto11 subtexto11 subtexto11"
+    "horarios horarios horarios";
+
+    grid-template-columns: 26% 26% 26%;
+    grid-template-rows: 100px 50px 300px 50px 300px 50px 300px;
+    justify-items: center; /* define las filas */
+    align-items: center; /* define las columnas */
+    justify-content: center; /* centra el contenido horizontalmente */
+}
+
+.titulo-contacto{
+        grid-area: texto9;
+    color: rgb(0, 0, 0); /* color del texto */
+    text-align: center; /* texto centrado */
+    font-size: 30px; /* tamaño de la fuente */
+    font-weight: bold; /* negrita */
+    margin-bottom: 10px; /* margen inferior */
+}
+
+.titulo-formulario{
+    grid-area: subtexto9;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.formulario-contacto {
+    grid-area: formulario;
+    width: 80%; /* ancho del formulario */
+    padding: 20px; /* espacio interno del formulario */
+    border: 1px solid #ccc; /* borde del formulario */
+    border-radius: 10px; /* bordes redondeados */
+    background-color: #f9f9f9; /* color de fondo del formulario */
+}
+
+.titulo-ubicacion{
+    grid-area: subtexto10;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.ubicacion-mapa {
+    grid-area: mapa;
+}
+.texto-horarios {
+    grid-area: subtexto11;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
+  
+}
+.horarios-ubicacion {
+    grid-area: horarios;
+    /* centra el texto dentro del área */
+   
+}
+
+
+
+/* sector para transformar en visualizacion de celular-------------------------------
+-------------------------------------------------------------------------------------*/
+
+
+@media (max-width: 480px) {
+  .header{
+    flex-direction: column-reverse;
+  }
+  .header img {
+    width: 50px; /* ancho del logo */
+    height: 50px; /* alto del logo */
+    margin: 5px; /* margen alrededor del logo */
+  }
+
+  .header a {
+    padding: 1px; /* espacio interno de los enlaces */
+    margin: 1px; /* margen alrededor de los enlaces */
+    font-size: 2px;
+    height: 1pt;
+  }
+    .img {
+    width: 50px; /* ancho del logo */
+    height: 50px; /* alto del logo */
+    margin: 5px; /* margen alrededor del logo */}
+
+
+
+   .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+    /* Ajusta el tamaño de los logos en el footer */
+
+    .contenedor-footer-pago,
+    .contenedor-footer-horario,
+    .contenedor-footer-redes {
+        width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
+        margin-bottom: 10px; /* Reducir el margen inferior */
+    }
+
+    .contenedor-footer ul,
+    .contenedor-footer li {
+        font-size: 0.8em; /* Reduce el tamaño de la fuente */
+    }
+
+    .logo-footer {
+        width: 40px; /* Ajusta el tamaño de los logos de pago en pantallas pequeñas */
+    }
+
+    .logo-redes {
+        width: 25px; /* Ajusta el tamaño de los logos de redes sociales en pantallas pequeñas */
+    }
+/* ----------------------------------------*/
+
+
+    .contenedor-contacto{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .contenedor-contacto {
+        grid-template-columns: 100%;
+    }
+
+    .contenedor-index{
+    grid-template-areas:
+    "texto1"
+    "foto1"
+    "texto2"
+    "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8"
+    "texto3"
+    "sector1 sector1 sector1 sector1 sector2 sector2 sector2 sector2";
+
+    
+}
+
+ .contenedor-index h1 {
+    font-size: 10px; /* tamaño de la fuente */
+
+  }
+
+   .contenedor-index h2 {
+    font-size: 7px; /* tamaño de la fuente */
+ 
+  }
+
+.contenedor-index img {
+    width: 40%; /* ancho de la imagen */
+    height: 40%; /* alto automático para mantener la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    
+}
+
+.imagen-frentenoche {
+    grid-area: foto1;
+    width: 40%; /* ancho de la imagen */
+    height: 40%; /* alto automático para mantener la proporción */
+  
+}
+
+.contenedor-historia{
+    display: grid;
+    grid-template-areas:
+    "texto4"
+    "subtexto1 "
+    "antiguo1 "
+    "parrafo1 "
+    "subtexto2"
+    "parrafo2 "
+    "antiguo2 "
+    "subtexto3"
+    "antiguo3 "
+    "parrafo3 ";
+    
+    grid-template-columns: 80%;
+    grid-template-rows: 10px 5px 50px 50px 5px 50px 50px 5px 50px 50px;
+    justify-items: center; /* define las filas */
+    align-items: center; /* define las columnas */
+    justify-content: center; /* centra el contenido horizontalmente */
+
+
+
+  }
+
+
+
+  /*---------------------*/
+ .contenedor-historia h1 {
+    font-size: 10px; /* tamaño de la fuente */
+    margin-bottom: 30px; /* margen inferior */
+    margin-top: 20px; /* margen superior */
+  }
+
+   .contenedor-historia h2 {
+    font-size: 7px; /* tamaño de la fuente */
+    margin-bottom: 50px; /* margen inferior */
+    margin-top: 50px; /* margen superior */
+  }
+
+.contenedor-historia img {
+    width: 40%; /* ancho de la imagen */
+    height: 80%; /* alto automático para mantener la proporción */
+    border-radius: 10px; /* bordes redondeados */
+    margin: 10px; /* margen alrededor de la imagen */
+}
+
+.contenedor-historia p {
+    margin: 10px;
+    font-size: 5px; /* tamaño de la fuente */
+    text-align: justify; /* justifica el texto */
+    margin-bottom: 50px; /* margen inferior */
+    margin-top: 50px; /* margen superior */
+}
+.titulo-historia {
+    grid-area: texto4;
+    color: rgb(0, 0, 0); /* color del texto */
+    text-align: center; /* texto centrado */
+    font-size: 30px; /* tamaño de la fuente */
+    font-weight: bold; /* negrita */
+    margin-bottom: 15px; /* margen inferior */
+   
+}
+
+
+
+  /*-----------------------*/
+
+
+
+
+
+.contenedor-productos {
+    display: grid;
+    grid-template-areas:
+    "texto5 texto5 texto5 texto5"
+    "subtexto4 subtexto4 subtexto4 subtexto4"
+    "foto2 foto3 foto4 foto5"
+    "subtexto5 subtexto5 subtexto5 subtexto5"
+    "foto6 foto7 foto8 foto9"
+    "subtexto6 subtexto6 subtexto6 subtexto6"
+    "foto10 foto11 foto12 foto13"
+    "subtexto7 subtexto7 subtexto7 subtexto7"
+    "foto14 foto15 foto16 foto17";
+
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    justify-items: center; /* define las filas */
+    align-items: center; /* define las columnas */
+    justify-content: center; /* centra el contenido horizontalmente */
+
+
+
+}
+
+.contenedor-productos h1 {
+    font-size: 10px; /* tamaño de la fuente */
+
+  }
+
+   .contenedor-productos h2 {
+    font-size: 7px; /* tamaño de la fuente */
+ 
+  }
+
+
+.contenedor-novedades {
+    display: grid;
+    grid-template-areas:
+    "texto6 texto6"
+    "foto18 foto19"
+    "foto20 foto20"
+    "subtexto8 subtexto8"
+    "video1 video1"
+    ;
+
+    grid-template-columns: 45% 45% ;
+    grid-template-rows: auto auto auto auto auto ;
+    justify-items: center; /* define las filas */
+    align-items: center; /* define las columnas */
+    justify-content: center; /* centra el contenido horizontalmente */
+    padding-block-end: 5pt;
+}
+
+.contenedor-novedades h1 {
+    font-size: 10px; /* tamaño de la fuente */
+
+  }
+
+   .contenedor-novedades h2 {
+    font-size: 7px; /* tamaño de la fuente */
+ 
+  }
+
+.video-novedades::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; /* Proporción 16:9 (height / width = 9 / 16 = 0.5625) */
+}
+  .contenedor-contacto {
+    display: grid;
+    grid-template-areas:
+    "texto9 "
+    "subtexto9 "
+    "formulario "
+    "subtexto10 "
+    "mapa "
+    "subtexto11 "
+    "horarios ";
+
+    grid-template-columns: 70% ;
+    grid-template-rows: 100px 50px 300px 50px 900px 50px 300px;
+    justify-items: center; /* define las filas */
+    align-items: center; /* define las columnas */
+    justify-content: center; /* centra el contenido horizontalmente */
+}
+
+  .contenedor-contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+.contenedor-contacto h1 {
+    font-size: 10px; /* tamaño de la fuente */
+
+  }
+
+   .contenedor-contacto h2 {
+    font-size: 7px; /* tamaño de la fuente */
+ 
+  }
+
+  .formulario-contacto {
+    width: 80%; /* ancho del formulario */
+    height: 80%; /* alto automático para mantener la proporción */
+    padding: 10px; /* espacio interno del formulario */
+    border: 1px solid #ccc; /* borde del formulario */
+    border-radius: 10px; /* bordes redondeados */
+    background-color: #f9f9f9; /* color de fondo del formulario */
+
+}
+
+.ubicacion-mapa {
+       
+     align-items: center;
+
+
+
+
+
+}
+
+    .horarios-ubicacion {
+       
+        font-size: 5px; /* tamaño de la fuente */
+}
+
+.whatsapp-container {
+           align-items: none;
+        }
+
+ /*------- sector what appp-----*/
+
+.whatsapp-button {
+        bottom: 10px; /* Lo sube un poco */
+        right: 10px; /* Mueve el botón a la izquierda*/
+        left: auto; /* Elimina el centrado horizontal */
+        transform: none; /* Elimina la traslación para centrar */
+    }
+
+    .whatsapp-button img {
+        width: 40px; /* Achica el logo dentro del botón */
+        height: auto;
+    }
+
+
+}
+
+
+
+.video-novedades {
+    max-width: 768px; /*  Un ancho mayor en pantallas más grandes */
+  }
