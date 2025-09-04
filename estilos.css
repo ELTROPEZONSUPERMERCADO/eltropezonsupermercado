@@ -1,18 +1,683 @@
-/* Error: The target selector was not found.
- * Use "@extend .tituloprincipal !optional" to avoid this error.
- *    ,
- * 30 |     @extend .tituloprincipal;
- *    |     ^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   paginasscss\_novedades.scss 30:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend .tituloprincipal !optional" to avoid this error.\a    \2577 \a 30 \2502      @extend .tituloprincipal;\d\a    \2502      ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   paginasscss\\_novedades.scss 30:5  root stylesheet';
+@charset "UTF-8";
+.contenedor-contacto {
+  display: grid;
+  grid-template-areas: "texto9 texto9 texto9" "subtexto9 subtexto9 subtexto9" "formulario formulario formulario" "subtexto10 subtexto10 subtexto10" "mapa mapa mapa" "subtexto11 subtexto11 subtexto11" "horarios horarios horarios";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px 100px 400px 100px 400px 20px 200px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
+.contenedor-contacto .titulo-contacto {
+  grid-area: texto9;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contenedor-contacto .titulo-formulario {
+  grid-area: subtexto9;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-contacto .formulario-contacto {
+  grid-area: formulario;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.contenedor-contacto .formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contenedor-contacto .formulario-contacto form label {
+  font-weight: bold;
+}
+.contenedor-contacto .formulario-contacto form input[type=text],
+.contenedor-contacto .formulario-contacto form input[type=email],
+.contenedor-contacto .formulario-contacto form textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contenedor-contacto .formulario-contacto form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contenedor-contacto .formulario-contacto form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedor-contacto .formulario-contacto form input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+.contenedor-contacto .titulo-ubicacion {
+  grid-area: subtexto10;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-contacto .ubicacion-mapa {
+  grid-area: mapa;
+}
+.contenedor-contacto .texto-horarios {
+  grid-area: subtexto11;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-contacto .horarios-ubicacion {
+  grid-area: horarios;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+.contenedor-contacto .horarios-ubicacion ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+  .header img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+  .header a {
+    padding: 1px;
+    margin: 1px;
+    font-size: 2px;
+    height: 1pt;
+  }
+  .img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-footer-pago,
+  .contenedor-footer-horario,
+  .contenedor-footer-redes {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .contenedor-footer ul,
+  .contenedor-footer li {
+    font-size: 0.8em;
+  }
+  .logo-footer {
+    width: 40px;
+  }
+  .logo-redes {
+    width: 25px;
+  }
+  .contenedor-contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .contenedor-contacto {
+    grid-template-columns: 100%;
+  }
+  .contenedor-index {
+    grid-template-areas: "texto1" "foto1" "texto2" "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8" "texto3" "sector1 sector1 sector1 sector1 sector2 sector2 sector2 sector2";
+  }
+  .contenedor-index h1 {
+    font-size: 10px;
+  }
+  .contenedor-index h2 {
+    font-size: 7px;
+  }
+  .contenedor-index img {
+    width: 40%;
+    height: 40%;
+    border-radius: 10px;
+  }
+  .imagen-frentenoche {
+    grid-area: foto1;
+    width: 40%;
+    height: 40%;
+  }
+  .contenedor-historia {
+    display: grid;
+    grid-template-areas: "texto4" "subtexto1 " "antiguo1 " "parrafo1 " "subtexto2" "parrafo2 " "antiguo2 " "subtexto3" "antiguo3 " "parrafo3 ";
+    grid-template-columns: 80%;
+    grid-template-rows: 10px 5px 50px 50px 5px 50px 50px 5px 50px 50px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-historia h1 {
+    font-size: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  .contenedor-historia h2 {
+    font-size: 7px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .contenedor-historia img {
+    width: 40%;
+    height: 80%;
+    border-radius: 10px;
+    margin: 10px;
+  }
+  .contenedor-historia p {
+    margin: 10px;
+    font-size: 5px;
+    text-align: justify;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .titulo-historia {
+    grid-area: texto4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .contenedor-productos {
+    display: grid;
+    grid-template-areas: "texto5 texto5 texto5 texto5" "subtexto4 subtexto4 subtexto4 subtexto4" "foto2 foto3 foto4 foto5" "subtexto5 subtexto5 subtexto5 subtexto5" "foto6 foto7 foto8 foto9" "subtexto6 subtexto6 subtexto6 subtexto6" "foto10 foto11 foto12 foto13" "subtexto7 subtexto7 subtexto7 subtexto7" "foto14 foto15 foto16 foto17";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-productos h1 {
+    font-size: 10px;
+  }
+  .contenedor-productos h2 {
+    font-size: 7px;
+  }
+  .contenedor-novedades {
+    display: grid;
+    grid-template-areas: "texto6 texto6" "foto18 foto19" "foto20 foto20" "subtexto8 subtexto8" "video1 video1";
+    grid-template-columns: 45% 45%;
+    grid-template-rows: auto auto auto auto auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding-block-end: 5pt;
+  }
+  .contenedor-novedades h1 {
+    font-size: 10px;
+  }
+  .contenedor-novedades h2 {
+    font-size: 7px;
+  }
+  .video-novedades::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  .contenedor-contacto {
+    display: grid;
+    grid-template-areas: "texto9 " "subtexto9 " "formulario " "subtexto10 " "mapa " "subtexto11 " "horarios ";
+    grid-template-columns: 70%;
+    grid-template-rows: 100px 50px 300px 50px 900px 50px 300px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .contenedor-contacto h1 {
+    font-size: 10px;
+  }
+  .contenedor-contacto h2 {
+    font-size: 7px;
+  }
+  .formulario-contacto {
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  .ubicacion-mapa {
+    align-items: center;
+  }
+  .horarios-ubicacion {
+    font-size: 5px;
+  }
+  .whatsapp-container {
+    align-items: none;
+  }
+  .whatsapp-button {
+    bottom: 10px;
+    right: 10px;
+    left: auto;
+    transform: none;
+  }
+  .whatsapp-button img {
+    width: 40px;
+    height: auto;
+  }
+}
+.contenedor-index {
+  display: grid;
+  grid-template-areas: "texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1 " "foto1 foto1 foto1 foto1 foto1 foto1 foto1 foto1" "texto2 texto2 texto2 texto2 texto2 texto2 texto2 texto2" "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8" "texto3 texto3 texto3 texto3 texto3 texto3 texto3 texto3" "sector1 sector1 sector1 sector1 sector1 sector1 sector1 sector1";
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 100px 500px 100px 100px 100px 700px;
+  justify-items: center; /* define las filas */
+  align-items: center; /* define las columnas */
+  justify-content: center; /* centra el contenido horizontalmente */
+}
+.contenedor-index .tituloprincipal {
+  grid-area: texto1;
+  color: rgb(0, 0, 0); /* color del texto */
+  text-align: center; /* texto centrado */
+  font-size: 30px; /* tamaño de la fuente */
+  font-weight: bold; /* negrita */
+  margin-bottom: 15px; /* margen inferior */
+}
+.contenedor-index img {
+  width: 90%; /* ancho de la imagen */
+  height: 90%; /* alto automático para mantener la proporción */
+  border-radius: 10px; /* bordes redondeados */
+}
+.contenedor-index .imagen-frentenoche {
+  grid-area: foto1; /* área de la cuadrícula */
+}
+.contenedor-index .titulo-marcas {
+  grid-area: texto2;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-index .logo-marcas1 {
+  grid-area: logo1;
+}
+.contenedor-index .logo-marcas2 {
+  grid-area: logo2;
+}
+.contenedor-index .logo-marcas3 {
+  grid-area: logo3;
+}
+.contenedor-index .logo-marcas4 {
+  grid-area: logo4;
+}
+.contenedor-index .logo-marcas5 {
+  grid-area: logo5;
+}
+.contenedor-index .logo-marcas6 {
+  grid-area: logo6;
+}
+.contenedor-index .logo-marcas7 {
+  grid-area: logo7;
+}
+.contenedor-index .logo-marcas8 {
+  grid-area: logo8;
+}
+.contenedor-index .titulo-local {
+  grid-area: texto3;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+}
+.contenedor-index .sectores1 {
+  grid-area: sector1;
+  top: 0;
+  justify-items: flex-start; /* alinea el contenido al inicio de la celda */
+  align-items: flex-start; /* alinea el contenido al inicio de la celda */
+  display: flex; /* usa flexbox para alinear el contenido */
+  flex-direction: column; /* organiza los elementos en una columna */
+  align-items: center; /* centra los elementos horizontalmente */
+  justify-content: center; /* centra los elementos verticalmente */
+  width: 40%; /* ancho del sector */
+  height: 40%;
+}
+.contenedor-index .sectores1 .carousel-inner {
+  width: 90%;
+  height: 90%;
+  align-items: center;
+}
+
+.contenedor-novedades {
+  display: grid;
+  grid-template-areas: "texto6 texto6 texto6" "foto18 foto19 foto20" "subtexto8 subtexto8 subtexto8" "video1 video1 video1";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px 400px 200px 500px;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+.contenedor-novedades .titulo-novedades {
+  grid-area: texto6;
+  color: black;
+  text-align: center;
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.9375rem;
+}
+.contenedor-novedades img {
+  width: 70%;
+  height: auto;
+  border-radius: 0.625rem;
+  object-fit: cover;
+}
+.contenedor-novedades .novedades-img1 {
+  grid-area: foto18;
+}
+.contenedor-novedades .novedades-img2 {
+  grid-area: foto19;
+}
+.contenedor-novedades .novedades-img3 {
+  grid-area: foto20;
+}
+.contenedor-novedades .texto-novedades {
+  grid-area: subtexto8;
+  color: black;
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.3125rem;
+}
+.contenedor-novedades .video-novedades {
+  grid-area: video1;
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+.contenedor-novedades .video-novedades iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contenedor-historia {
+  display: grid;
+  grid-template-areas: "texto4 texto4  " "subtexto1 subtexto1" "antiguo1 parrafo1" "subtexto2 subtexto2" "parrafo2 antiguo2" "subtexto3 subtexto3" "antiguo3 parrafo3";
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 200px 200px 400px 200px 400px 200px 400px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-historia .titulo-historia {
+  grid-area: texto4;
+  color: rgb(0, 0, 0); /* color del texto */
+  text-align: center; /* texto centrado */
+  font-size: 30px; /* tamaño de la fuente */
+  font-weight: bold; /* negrita */
+  margin-bottom: 15px; /* margen inferior */
+}
+.contenedor-historia .titulo-epocas1, .contenedor-historia .titulo-epocas3, .contenedor-historia .titulo-epocas2 {
+  grid-area: subtexto1;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-historia img {
+  width: 70%; /* ancho de la imagen */
+  height: 70%; /* alto automático para mantener la proporción */
+  border-radius: 10px;
+  margin: 10px;
+}
+.contenedor-historia .imagen-historia1 {
+  grid-area: antiguo1;
+}
+.contenedor-historia .contenedor-historia p {
+  margin: 10px;
+}
+.contenedor-historia .parrafohistoria1 {
+  grid-area: parrafo1;
+}
+.contenedor-historia .titulo-epocas2 {
+  grid-area: subtexto2;
+}
+.contenedor-historia .imagen-historia2 {
+  grid-area: antiguo2;
+}
+.contenedor-historia .parrafohistoria2 {
+  grid-area: parrafo2;
+}
+.contenedor-historia .titulo-epocas3 {
+  grid-area: subtexto3;
+}
+.contenedor-historia .imagen-historia3 {
+  grid-area: antiguo3;
+}
+.contenedor-historia .parrafohistoria3 {
+  grid-area: parrafo3;
+}
+
+.contenedor-productos {
+  display: grid;
+  grid-template-areas: "texto5 texto5 texto5 texto5" "subtexto4 subtexto4 subtexto4 subtexto4" "foto2 foto3 foto4 foto5" "subtexto5 subtexto5 subtexto5 subtexto5" "foto6 foto7 foto8 foto9" "subtexto6 subtexto6 subtexto6 subtexto6" "foto10 foto11 foto12 foto13" "subtexto7 subtexto7 subtexto7 subtexto7" "foto14 foto15 foto16 foto17";
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 100px 50px 300px 50px 300px 50px 300px 50px 300px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-productos img {
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
+  margin: 7px;
+}
+.contenedor-productos .titulo-productos {
+  grid-area: texto5;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.contenedor-productos .titulo-sector1 {
+  grid-area: subtexto4;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-productos .imagen-productos1 {
+  grid-area: foto2;
+}
+.contenedor-productos .imagen-productos2 {
+  grid-area: foto3;
+}
+.contenedor-productos .imagen-productos3 {
+  grid-area: foto4;
+}
+.contenedor-productos .imagen-productos4 {
+  grid-area: foto5;
+}
+.contenedor-productos .titulo-sector2 {
+  grid-area: subtexto5;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-productos .imagen-productos5 {
+  grid-area: foto6;
+}
+.contenedor-productos .imagen-productos6 {
+  grid-area: foto7;
+}
+.contenedor-productos .imagen-productos7 {
+  grid-area: foto8;
+}
+.contenedor-productos .imagen-productos8 {
+  grid-area: foto9;
+}
+.contenedor-productos .titulo-sector3 {
+  grid-area: subtexto6;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-productos .imagen-productos9 {
+  grid-area: foto10;
+}
+.contenedor-productos .imagen-productos10 {
+  grid-area: foto11;
+}
+.contenedor-productos .imagen-productos11 {
+  grid-area: foto12;
+}
+.contenedor-productos .imagen-productos12 {
+  grid-area: foto13;
+}
+.contenedor-productos .titulo-sector4 {
+  grid-area: subtexto7;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-productos .imagen-productos13 {
+  grid-area: foto14;
+}
+.contenedor-productos .imagen-productos14 {
+  grid-area: foto15;
+}
+.contenedor-productos .imagen-productos15 {
+  grid-area: foto16;
+}
+.contenedor-productos .imagen-productos16 {
+  grid-area: foto17;
+}
+
+.dropdown-menu .dropdown-item {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* hace que el ancho y alto de los elementos incluya el padding y el borde */
+}
+
+header img {
+  width: 60px; /* ancho del logo */
+  height: 60px; /* alto del logo */
+  border-radius: 50%; /* hace que el logo sea redondo */
+  margin: 10px; /* margen alrededor del logo */
+  display: block; /* hace que el logo se muestre como un bloque */
+  margin-left: auto; /* centra el logo horizontalmente */
+}
+
+header {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* estilos de nav */
+nav {
+  background-color: #000000; /* color de fondo del nav */
+  color: rgb(255, 255, 255); /* color del texto del nav */
+  padding: 10px; /* espacio interno del nav */
+  margin: auto; /* centra el nav horizontalmente */
+  text-align: center; /* centra el texto dentro del nav */
+}
+
+nav a {
+  padding: 10px; /* espacio interno de los enlaces */
+  margin: 5px; /* margen alrededor de los enlaces */
+}
+
+/* whatapp de costado --------------------------------------- */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-button img {
+  width: 60px; /* Ajusta el tamaño del logo */
+  height: auto;
+  border-radius: 50%; /* Hace que el logo sea circular */
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.1); /* Pequeño aumento al pasar el ratón */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* para footer -----------------------------------------------------------------------------------------*/
+footer {
+  background-color: #000000;
+  color: white; /* Cambiado a blanco para que sea visible sobre el fondo negro */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer a {
+  color: #ffffff; /* Mantenemos el color blanco para los enlaces */
+  text-decoration: none;
+}
+
+.contenedor-footer {
+  color: rgb(255, 255, 255);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* Espacio uniforme entre las secciones */
+  align-items: center; /* Centra verticalmente los elementos */
+  padding: 20px;
+}
+.contenedor-footer section {
+  padding: 10px;
+}
+
+.contenedor-footer-horario,
+.contenedor-footer-pago,
+.contenedor-footer-redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centramos horizontalmente los elementos dentro de la columna */
+}
+
+.logo-footer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+.logo-redes {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=estilos.css.map */
