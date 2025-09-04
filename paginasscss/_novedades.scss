@@ -1,0 +1,77 @@
+
+@use "./variables.scss";
+@use "./mediaq.scss";
+
+
+   
+
+
+  .contenedor-novedades {
+  display: grid;
+  grid-template-areas:
+    "texto6 texto6 texto6"
+    "foto18 foto19 foto20"
+    "subtexto8 subtexto8 subtexto8"
+    "video1 video1 video1";
+  grid-template-columns: 30% 30% 30%; // Usamos fr para mejor distribución
+  grid-template-rows: 200px 400px 200px 500px;  // 'auto' se ajusta al contenido
+  justify-items: center;
+  align-items: center;
+  gap: 10px; // Espacio entre elementos (más moderno que márgenes individuales)
+  padding: 20px;
+
+  .titulo-novedades {
+    grid-area: texto6;
+    color: black;
+    text-align: center;
+    font-size: 1.875rem;  // 30px; (Usar rem para accesibilidad)
+    font-weight: bold;
+    margin-bottom: 0.9375rem; // 15px;  (Usar rem para accesibilidad)
+    @extend .tituloprincipal;
+  }
+
+  img {
+    width: 70%; // Ocupa todo el espacio disponible en su celda
+    height: auto; // Mantiene la proporción
+    border-radius: 0.625rem; // 10px; (Usar rem para accesibilidad)
+    object-fit: cover;  // Evita distorsión de la imagen
+  }
+
+  .novedades-img1 {
+    grid-area: foto18;
+  }
+
+  .novedades-img2 {
+    grid-area: foto19;
+  }
+
+  .novedades-img3 {
+    grid-area: foto20;
+  }
+
+  .texto-novedades {
+    grid-area: subtexto8;
+    color: black;
+    text-align: center;
+    font-size: 1.25rem; // 20px; (Usar rem para accesibilidad)
+    margin-bottom: 0.3125rem; // 5px;  (Usar rem para accesibilidad)
+  }
+
+  .video-novedades {
+    grid-area: video1;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    max-width: 768px;
+
+    iframe {
+      position: absolute; //cambie de relative a absolute
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+

@@ -1,0 +1,314 @@
+  @media (max-width: 480px) {
+  .header{
+    flex-direction: column-reverse;
+  }
+  .header img {
+    width: 50px; 
+    height: 50px; 
+    margin: 5px; 
+  }
+
+  .header a {
+    padding: 1px; 
+    margin: 1px; 
+    font-size: 2px;
+    height: 1pt;
+  }
+    .img {
+    width: 50px; 
+    height: 50px; 
+    margin: 5px; }
+
+
+
+   .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+   
+
+    .contenedor-footer-pago,
+    .contenedor-footer-horario,
+    .contenedor-footer-redes {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .contenedor-footer ul,
+    .contenedor-footer li {
+        font-size: 0.8em; 
+    }
+
+    .logo-footer {
+        width: 40px; 
+    }
+
+    .logo-redes {
+        width: 25px; 
+    }
+
+
+
+    .contenedor-contacto{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .contenedor-contacto {
+        grid-template-columns: 100%;
+    }
+
+    .contenedor-index{
+    grid-template-areas:
+    "texto1"
+    "foto1"
+    "texto2"
+    "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8"
+    "texto3"
+    "sector1 sector1 sector1 sector1 sector2 sector2 sector2 sector2";
+
+    
+}
+
+ .contenedor-index h1 {
+    font-size: 10px; 
+
+  }
+
+   .contenedor-index h2 {
+    font-size: 7px; 
+ 
+  }
+
+.contenedor-index img {
+    width: 40%; 
+    height: 40%; 
+    border-radius: 10px; 
+    
+}
+
+.imagen-frentenoche {
+    grid-area: foto1;
+    width: 40%; 
+    height: 40%; 
+  
+}
+
+.contenedor-historia{
+    display: grid;
+    grid-template-areas:
+    "texto4"
+    "subtexto1 "
+    "antiguo1 "
+    "parrafo1 "
+    "subtexto2"
+    "parrafo2 "
+    "antiguo2 "
+    "subtexto3"
+    "antiguo3 "
+    "parrafo3 ";
+    
+    grid-template-columns: 80%;
+    grid-template-rows: 10px 5px 50px 50px 5px 50px 50px 5px 50px 50px;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+
+
+
+  }
+
+
+
+
+ .contenedor-historia h1 {
+    font-size: 10px; 
+    margin-bottom: 30px; 
+    margin-top: 20px; 
+  }
+
+   .contenedor-historia h2 {
+    font-size: 7px; 
+    margin-bottom: 50px; 
+    margin-top: 50px; 
+  }
+
+.contenedor-historia img {
+    width: 40%; 
+    height: 80%; 
+    border-radius: 10px; 
+    margin: 10px; 
+}
+
+.contenedor-historia p {
+    margin: 10px;
+    font-size: 5px; 
+    text-align: justify; 
+    margin-bottom: 50px; 
+    margin-top: 50px; 
+}
+.titulo-historia {
+    grid-area: texto4;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    font-size: 30px; 
+    font-weight: bold; 
+    margin-bottom: 15px; 
+   
+}
+
+
+
+
+
+
+
+
+
+.contenedor-productos {
+    display: grid;
+    grid-template-areas:
+    "texto5 texto5 texto5 texto5"
+    "subtexto4 subtexto4 subtexto4 subtexto4"
+    "foto2 foto3 foto4 foto5"
+    "subtexto5 subtexto5 subtexto5 subtexto5"
+    "foto6 foto7 foto8 foto9"
+    "subtexto6 subtexto6 subtexto6 subtexto6"
+    "foto10 foto11 foto12 foto13"
+    "subtexto7 subtexto7 subtexto7 subtexto7"
+    "foto14 foto15 foto16 foto17";
+
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+
+
+
+}
+
+.contenedor-productos h1 {
+    font-size: 10px; 
+
+  }
+
+   .contenedor-productos h2 {
+    font-size: 7px; 
+ 
+  }
+
+
+.contenedor-novedades {
+    display: grid;
+    grid-template-areas:
+    "texto6 texto6"
+    "foto18 foto19"
+    "foto20 foto20"
+    "subtexto8 subtexto8"
+    "video1 video1"
+    ;
+
+    grid-template-columns: 45% 45% ;
+    grid-template-rows: auto auto auto auto auto ;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+    padding-block-end: 5pt;
+}
+
+.contenedor-novedades h1 {
+    font-size: 10px; 
+
+  }
+
+   .contenedor-novedades h2 {
+    font-size: 7px; 
+ 
+  }
+
+.video-novedades::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; 
+}
+  .contenedor-contacto {
+    display: grid;
+    grid-template-areas:
+    "texto9 "
+    "subtexto9 "
+    "formulario "
+    "subtexto10 "
+    "mapa "
+    "subtexto11 "
+    "horarios ";
+
+    grid-template-columns: 70% ;
+    grid-template-rows: 100px 50px 300px 50px 900px 50px 300px;
+    justify-items: center; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+  .contenedor-contacto {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+.contenedor-contacto h1 {
+    font-size: 10px;
+
+  }
+
+   .contenedor-contacto h2 {
+    font-size: 7px; 
+ 
+  }
+
+  .formulario-contacto {
+    width: 80%; 
+    height: 80%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f9f9f9; 
+
+}
+
+.ubicacion-mapa {
+       
+     align-items: center;
+
+
+
+
+
+}
+
+    .horarios-ubicacion {
+       
+        font-size: 5px; 
+}
+
+.whatsapp-container {
+           align-items: none;
+        }
+
+
+
+.whatsapp-button {
+        bottom: 10px; 
+        right: 10px; 
+        left: auto; 
+        transform: none; 
+    }
+
+    .whatsapp-button img {
+        width: 40px; 
+        height: auto;
+    }
+
+
+}
