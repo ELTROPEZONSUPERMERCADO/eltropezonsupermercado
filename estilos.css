@@ -1,93 +1,4 @@
 @charset "UTF-8";
-.contenedor-contacto {
-  display: grid;
-  grid-template-areas: "texto9 texto9 texto9" "subtexto9 subtexto9 subtexto9" "formulario formulario formulario" "subtexto10 subtexto10 subtexto10" "mapa mapa mapa" "subtexto11 subtexto11 subtexto11" "horarios horarios horarios";
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 100px 400px 100px 400px 20px 200px;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-}
-.contenedor-contacto .titulo-contacto {
-  grid-area: texto9;
-  color: rgb(0, 0, 0);
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-.contenedor-contacto .titulo-formulario {
-  grid-area: subtexto9;
-  color: #000000;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-.contenedor-contacto .formulario-contacto {
-  grid-area: formulario;
-  width: 80%;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-}
-.contenedor-contacto .formulario-contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-.contenedor-contacto .formulario-contacto form label {
-  font-weight: bold;
-}
-.contenedor-contacto .formulario-contacto form input[type=text],
-.contenedor-contacto .formulario-contacto form input[type=email],
-.contenedor-contacto .formulario-contacto form textarea {
-  padding: 8px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.contenedor-contacto .formulario-contacto form textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-.contenedor-contacto .formulario-contacto form input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.contenedor-contacto .formulario-contacto form input[type=submit]:hover {
-  background-color: #3e8e41;
-}
-.contenedor-contacto .titulo-ubicacion {
-  grid-area: subtexto10;
-  color: #000000;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-.contenedor-contacto .ubicacion-mapa {
-  grid-area: mapa;
-}
-.contenedor-contacto .texto-horarios {
-  grid-area: subtexto11;
-  color: #000000;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 5px;
-}
-.contenedor-contacto .horarios-ubicacion {
-  grid-area: horarios;
-  text-align: center; /* Centra el texto horizontalmente */
-}
-.contenedor-contacto .horarios-ubicacion ul {
-  list-style: none; /* Elimina los puntos de la lista */
-  padding: 0; /* Elimina el relleno predeterminado de la lista */
-}
-
 @media (max-width: 480px) {
   .header {
     flex-direction: column-reverse;
@@ -277,6 +188,102 @@
     height: auto;
   }
 }
+.contenedor-contacto {
+  display: grid;
+  grid-template-areas: "texto9 texto9 texto9" "subtexto9 subtexto9 subtexto9" "formulario formulario formulario" "subtexto10 subtexto10 subtexto10" "mapa mapa mapa" "subtexto11 subtexto11 subtexto11" "horarios horarios horarios";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 200px 100px 400px 100px 400px 20px 200px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+.contenedor-contacto .titulo-contacto {
+  grid-area: texto9;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
+  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+.contenedor-contacto .titulo-formulario {
+  grid-area: subtexto9;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-contacto .formulario-contacto {
+  grid-area: formulario;
+  width: 80%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.contenedor-contacto .formulario-contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contenedor-contacto .formulario-contacto form label {
+  font-weight: bold;
+}
+.contenedor-contacto .formulario-contacto form input[type=text],
+.contenedor-contacto .formulario-contacto form input[type=email],
+.contenedor-contacto .formulario-contacto form textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contenedor-contacto .formulario-contacto form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.contenedor-contacto .formulario-contacto form input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedor-contacto .formulario-contacto form input[type=submit]:hover {
+  background-color: #3e8e41;
+}
+.contenedor-contacto .titulo-ubicacion {
+  grid-area: subtexto10;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-contacto .ubicacion-mapa {
+  grid-area: mapa;
+}
+.contenedor-contacto .texto-horarios {
+  grid-area: subtexto11;
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contenedor-contacto .horarios-ubicacion {
+  grid-area: horarios;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+.contenedor-contacto .horarios-ubicacion ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el relleno predeterminado de la lista */
+}
+
 .contenedor-index {
   display: grid;
   grid-template-areas: "texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1 " "foto1 foto1 foto1 foto1 foto1 foto1 foto1 foto1" "texto2 texto2 texto2 texto2 texto2 texto2 texto2 texto2" "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8" "texto3 texto3 texto3 texto3 texto3 texto3 texto3 texto3" "sector1 sector1 sector1 sector1 sector1 sector1 sector1 sector1";
@@ -293,6 +300,13 @@
   font-size: 30px; /* tamaño de la fuente */
   font-weight: bold; /* negrita */
   margin-bottom: 15px; /* margen inferior */
+  color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
+  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .contenedor-index img {
   width: 90%; /* ancho de la imagen */
@@ -374,6 +388,13 @@
   font-size: 1.875rem;
   font-weight: bold;
   margin-bottom: 0.9375rem;
+  color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
+  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .contenedor-novedades img {
   width: 70%;
@@ -436,6 +457,13 @@
   text-align: center;
   font-size: 20px;
   margin-bottom: 5px;
+  color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
+  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .contenedor-historia img {
   width: 70%; /* ancho de la imagen */
@@ -493,6 +521,13 @@
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 15px;
+  color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
+  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  text-align: center;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 .contenedor-productos .titulo-sector1 {
   grid-area: subtexto4;
@@ -581,6 +616,10 @@
   box-sizing: border-box; /* hace que el ancho y alto de los elementos incluya el padding y el borde */
 }
 
+header {
+  flex-direction: row;
+  justify-content: space-around;
+}
 header img {
   width: 60px; /* ancho del logo */
   height: 60px; /* alto del logo */
@@ -588,11 +627,6 @@ header img {
   margin: 10px; /* margen alrededor del logo */
   display: block; /* hace que el logo se muestre como un bloque */
   margin-left: auto; /* centra el logo horizontalmente */
-}
-
-header {
-  flex-direction: row;
-  justify-content: space-around;
 }
 
 /* estilos de nav */
@@ -603,7 +637,6 @@ nav {
   margin: auto; /* centra el nav horizontalmente */
   text-align: center; /* centra el texto dentro del nav */
 }
-
 nav a {
   padding: 10px; /* espacio interno de los enlaces */
   margin: 5px; /* margen alrededor de los enlaces */
@@ -616,8 +649,7 @@ nav a {
   right: 20px;
   z-index: 1000; /* Asegura que esté por encima de otros elementos */
 }
-
-.whatsapp-button img {
+.whatsapp-button .whatsapp-button img {
   width: 60px; /* Ajusta el tamaño del logo */
   height: auto;
   border-radius: 50%; /* Hace que el logo sea circular */
@@ -642,8 +674,7 @@ footer a {
   color: #ffffff; /* Mantenemos el color blanco para los enlaces */
   text-decoration: none;
 }
-
-.contenedor-footer {
+footer .contenedor-footer {
   color: rgb(255, 255, 255);
   height: auto;
   display: flex;
@@ -652,32 +683,41 @@ footer a {
   align-items: center; /* Centra verticalmente los elementos */
   padding: 20px;
 }
-.contenedor-footer section {
+footer .contenedor-footer section {
   padding: 10px;
 }
-
-.contenedor-footer-horario,
-.contenedor-footer-pago,
-.contenedor-footer-redes {
+footer .contenedor-footer-horario,
+footer .contenedor-footer-pago,
+footer .contenedor-footer-redes {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centramos horizontalmente los elementos dentro de la columna */
 }
-
-.logo-footer {
+footer .logo-footer {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   display: inline-block;
   margin: 5px;
 }
-
-.logo-redes {
+footer .logo-redes {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   margin: 5px;
   display: inline-block;
+}
+
+.animacioncliente {
+  border: red 2px solid;
+  transition: 2s;
+  background-size: cover;
+}
+
+.animacioncliente:hover {
+  transform: rotate(360deg);
+  border: rgb(254, 254, 254) 2px solid;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=estilos.css.map */

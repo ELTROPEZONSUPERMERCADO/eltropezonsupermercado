@@ -1,14 +1,13 @@
-@mixin tituloprincipal ($tituloh1:darkgray)
-{
-    
-    color: rgb(12, 23, 45); /* puede ser rgba , hexageximal  nombre y rgb*/
-    font-size: 40px;/*tamaño de letra unidades de medida px, em rem %*/
-     text-align: center;
-    font-weight: bold;
-font-family: 'Times New Roman', Times, serif;
-margin-bottom: 5%;
-margin-top: 5%;
- 
+
+
+@mixin estilo-titulo {
+  color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
+  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 @mixin alineacionimagen {  

@@ -22,8 +22,12 @@
     box-sizing: border-box; /* hace que el ancho y alto de los elementos incluya el padding y el borde */
 }
 
-
-header img {
+ header{
+       
+        flex-direction: row;
+        justify-content: space-around;
+    
+ img {
     width: 60px; /* ancho del logo */
     height: 60px; /* alto del logo */
     border-radius: 50%; /* hace que el logo sea redondo */
@@ -31,11 +35,7 @@ header img {
     display: block; /* hace que el logo se muestre como un bloque */
     margin-left: auto; /* centra el logo horizontalmente */}
 
-    header{
-       
-        flex-direction: row;
-        justify-content: space-around;
-    }
+}
 
 /* estilos de nav */
 nav {
@@ -44,15 +44,15 @@ nav {
     padding: 10px; /* espacio interno del nav */
     margin: auto; /* centra el nav horizontalmente */
     text-align: center; /* centra el texto dentro del nav */
-}  
+ 
 
 
-nav a {
+a {
     
     padding: 10px; /* espacio interno de los enlaces */
     margin: 5px; /* margen alrededor de los enlaces */
 }
-
+}
 
 /* whatapp de costado --------------------------------------- */
 
@@ -61,13 +61,14 @@ nav a {
     bottom: 20px;
     right: 20px;
     z-index: 1000; /* Asegura que esté por encima de otros elementos */
-}
+
 
 .whatsapp-button img {
     width: 60px; /* Ajusta el tamaño del logo */
     height: auto;
     border-radius: 50%; /* Hace que el logo sea circular */
     
+}
 }
 
 
@@ -94,7 +95,7 @@ footer {
     color: #ffffff;  /* Mantenemos el color blanco para los enlaces */
     text-decoration: none;
   }
-}
+
 
 .contenedor-footer {
   color: rgb(255, 255, 255);
@@ -133,3 +134,19 @@ footer {
   margin: 5px;
   display: inline-block; // Corregido: Usamos inline-block para un mejor manejo
 }
+}
+
+
+.animacioncliente {
+border: red 2px solid  ;
+transition: 2s;
+
+background-size: cover;}
+
+.animacioncliente:hover {
+    transform: rotate(360deg);
+    border: rgb(254, 254, 254) 2px solid  ;
+    
+    background-size: cover;
+}
+

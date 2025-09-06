@@ -1,3 +1,8 @@
+@use "./variables.scss" as*;
+@use "./mediaq.scss" as*;
+
+
+
 .contenedor-historia{
 display: grid;
 grid-template-areas:
@@ -32,7 +37,7 @@ justify-content: center;
     text-align: center;
     font-size: 20px;
     margin-bottom: 5px;
-
+ @include estilo-titulo;
 }
 img {
     width: 70%; /* ancho de la imagen */

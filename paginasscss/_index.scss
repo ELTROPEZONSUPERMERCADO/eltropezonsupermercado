@@ -1,5 +1,7 @@
-@use "./variables.scss";
-@use "./mediaq.scss";
+
+@use "./variables.scss" as*;
+@use "./mediaq.scss" as*;
+
 
 
 
@@ -23,13 +25,15 @@ justify-content: center; /* centra el contenido horizontalmente */
 
 .tituloprincipal {
    
+    
+
     grid-area: texto1;
     color: rgb(0, 0, 0); /* color del texto */
     text-align: center; /* texto centrado */
     font-size: 30px; /* tamaño de la fuente */
     font-weight: bold; /* negrita */
     margin-bottom: 15px; /* margen inferior */
- 
+ @include estilo-titulo;
 
 }
 

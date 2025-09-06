@@ -1,9 +1,5 @@
-
-@use "./variables.scss";
-@use "./mediaq.scss";
-
-
-   
+@use "./variables.scss" as*;
+@use "./mediaq.scss" as*;
 
 
   .contenedor-novedades {
@@ -27,7 +23,7 @@
     font-size: 1.875rem;  // 30px; (Usar rem para accesibilidad)
     font-weight: bold;
     margin-bottom: 0.9375rem; // 15px;  (Usar rem para accesibilidad)
-    
+     @include estilo-titulo;
   }
 
   img {
