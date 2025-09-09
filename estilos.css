@@ -1,7 +1,14 @@
 @charset "UTF-8";
 @media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 10px; /* hace que el ancho y alto de los elementos incluya el padding y el borde */
+  }
   .header {
     flex-direction: column-reverse;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
   }
   .header img {
     width: 50px;
@@ -11,27 +18,213 @@
   .header a {
     padding: 1px;
     margin: 1px;
-    font-size: 2px;
-    height: 1pt;
-  }
-  .img {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
+    font-size: 12px;
+    height: auto;
   }
   .nav {
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+  }
+  .contenedor-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor-footer section {
+    margin-bottom: 10px;
+  }
+  .contenedor-footer .contenedor-footer-pago,
+  .contenedor-footer .contenedor-footer-horario,
+  .contenedor-footer .contenedor-footer-redes {
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: small;
+  }
+  .contenedor-footer .contenedor-footer ul,
+  .contenedor-footer .contenedor-footer li {
+    font-size: 0.8em;
+    max-width: 100%;
+  }
+  .contenedor-footer .logo-footer {
+    width: 40px;
+  }
+  .contenedor-footer .logo-redes {
+    width: 25px;
+  }
+  .contenedor-index {
+    grid-template-areas: "texto1" "foto1" "texto2" "logo1 logo2 logo3 logo4" "logo5 logo6 logo7 logo8" "texto3" "sector1" "sector2";
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+  .contenedor-index h1 {
+    font-size: 2em;
+  }
+  .contenedor-index h2 {
+    font-size: 1.5em;
+  }
+  .contenedor-index img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .contenedor-index .imagen-frentenoche {
+    grid-area: foto1;
+    width: 80%;
+    height: auto;
+  }
+  .contenedor-historia {
+    display: grid;
+    grid-template-areas: "texto4" "subtexto1" "antiguo1" "parrafo1" "subtexto2" "parrafo2" "antiguo2" "subtexto3" "antiguo3" "parrafo3";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-historia h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+  }
+  .contenedor-historia h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .contenedor-historia img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0.5em;
+  }
+  .contenedor-historia p {
+    margin: 0.5em;
+    font-size: 1em;
+    font-size: 10px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  .contenedor-historia .titulo-historia {
+    grid-area: texto4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  .text-bg-warning p-3 {
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor-productos {
+    display: grid;
+    grid-template-areas: "texto5" "subtexto4" "foto2" "foto3" "foto4" "foto5" "subtexto5" "foto6" "foto7" "foto8" "foto9" "subtexto6" "foto10" "foto11" "foto12" "foto13" "subtexto7" "foto14" "foto15" "foto16" "foto17";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-productos h1 {
+    font-size: 2em;
+  }
+  .contenedor-productos h2 {
+    font-size: 1.5em;
+  }
+  .contenedor-novedades {
+    display: grid;
+    grid-template-areas: "texto6" "foto18" "foto19" "foto20" "subtexto8" "video1";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding-block-end: 5pt;
+  }
+  .contenedor-novedades h1 {
+    font-size: 2em;
+  }
+  .contenedor-novedades h2 {
+    font-size: 1.5em;
+  }
+  .contenedor-novedades .video-novedades::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
+  }
+  .contenedor-contacto {
+    display: grid;
+    grid-template-areas: "texto9" "subtexto9" "formulario" "subtexto10" "mapa" "subtexto11" "horarios";
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedor-contacto h1 {
+    font-size: 2em;
+  }
+  .contenedor-contacto h2 {
+    font-size: 1.5em;
+  }
+  .contenedor-contacto .formulario-contacto {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  .contenedor-contacto .ubicacion-mapa {
+    align-items: center;
+  }
+  .contenedor-contacto .horarios-ubicacion {
+    font-size: 0.8em;
+  }
+  .whatsapp-button img {
+    width: 50px; /* Tamaño más pequeño en pantallas pequeñas */
+    opacity: 0.5; /* Transparencia del 50% en pantallas pequeñas */
+  }
+  .whatsapp-button:hover img {
+    opacity: 0.7; /* Un poco más visible al pasar el ratón */
+    transform: scale(1.05); /* Reducimos el aumento al pasar el mouse */
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
+  .header img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+  }
+  .header a {
+    padding: 1px;
+    margin: 1px;
+    font-size: 12px;
+    height: auto;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .contenedor-footer {
+    flex-direction: column; /* Apila las secciones verticalmente */
+    align-items: center; /* Centra las secciones horizontalmente */
+  }
+  .contenedor-footer section {
+    margin-bottom: 10px; /* Reduce el espacio entre las secciones */
   }
   .contenedor-footer-pago,
   .contenedor-footer-horario,
   .contenedor-footer-redes {
-    width: 100%;
-    margin-bottom: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: small;
   }
   .contenedor-footer ul,
   .contenedor-footer li {
     font-size: 0.8em;
+    max-width: 100%;
   }
   .logo-footer {
     width: 40px;
@@ -39,153 +232,139 @@
   .logo-redes {
     width: 25px;
   }
-  .contenedor-contacto {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-  }
-  .contenedor-contacto {
-    grid-template-columns: 100%;
-  }
   .contenedor-index {
-    grid-template-areas: "texto1" "foto1" "texto2" "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8" "texto3" "sector1 sector1 sector1 sector1 sector2 sector2 sector2 sector2";
+    grid-template-areas: "texto1" "foto1" "texto2" "logo1 logo2 logo3 logo4" "logo5 logo6 logo7 logo8" "texto3" "sector1" "sector2";
+    grid-template-columns: 1fr;
+    display: grid;
   }
   .contenedor-index h1 {
-    font-size: 10px;
+    font-size: 2em;
   }
   .contenedor-index h2 {
-    font-size: 7px;
+    font-size: 1.5em;
   }
   .contenedor-index img {
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
   }
-  .imagen-frentenoche {
+  .contenedor-index .imagen-frentenoche {
     grid-area: foto1;
-    width: 40%;
-    height: 40%;
+    width: 80%;
+    height: auto;
   }
   .contenedor-historia {
     display: grid;
-    grid-template-areas: "texto4" "subtexto1 " "antiguo1 " "parrafo1 " "subtexto2" "parrafo2 " "antiguo2 " "subtexto3" "antiguo3 " "parrafo3 ";
-    grid-template-columns: 80%;
-    grid-template-rows: 10px 5px 50px 50px 5px 50px 50px 5px 50px 50px;
+    grid-template-areas: "texto4" "subtexto1" "antiguo1" "parrafo1" "subtexto2" "parrafo2" "antiguo2" "subtexto3" "antiguo3" "parrafo3";
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     justify-content: center;
   }
   .contenedor-historia h1 {
-    font-size: 10px;
-    margin-bottom: 30px;
-    margin-top: 20px;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
   }
   .contenedor-historia h2 {
-    font-size: 7px;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
   .contenedor-historia img {
-    width: 40%;
-    height: 80%;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0.5em;
   }
   .contenedor-historia p {
-    margin: 10px;
-    font-size: 5px;
-    text-align: justify;
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin: 0.5em;
+    font-size: 1em;
+    font-size: 10px;
+    margin-bottom: 1em;
+    margin-top: 1em;
   }
-  .titulo-historia {
+  .contenedor-historia .titulo-historia {
     grid-area: texto4;
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 30px;
+    font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 0.5em;
+  }
+  .text-bg-warning p-3 {
+    margin: 0;
+    padding: 0;
   }
   .contenedor-productos {
     display: grid;
-    grid-template-areas: "texto5 texto5 texto5 texto5" "subtexto4 subtexto4 subtexto4 subtexto4" "foto2 foto3 foto4 foto5" "subtexto5 subtexto5 subtexto5 subtexto5" "foto6 foto7 foto8 foto9" "subtexto6 subtexto6 subtexto6 subtexto6" "foto10 foto11 foto12 foto13" "subtexto7 subtexto7 subtexto7 subtexto7" "foto14 foto15 foto16 foto17";
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto;
+    grid-template-areas: "texto5" "subtexto4" "foto2" "foto3" "foto4" "foto5" "subtexto5" "foto6" "foto7" "foto8" "foto9" "subtexto6" "foto10" "foto11" "foto12" "foto13" "subtexto7" "foto14" "foto15" "foto16" "foto17";
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     justify-content: center;
   }
   .contenedor-productos h1 {
-    font-size: 10px;
+    font-size: 2em;
   }
   .contenedor-productos h2 {
-    font-size: 7px;
+    font-size: 1.5em;
   }
   .contenedor-novedades {
     display: grid;
-    grid-template-areas: "texto6 texto6" "foto18 foto19" "foto20 foto20" "subtexto8 subtexto8" "video1 video1";
-    grid-template-columns: 45% 45%;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "texto6" "foto18" "foto19" "foto20" "subtexto8" "video1";
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     justify-content: center;
     padding-block-end: 5pt;
   }
   .contenedor-novedades h1 {
-    font-size: 10px;
+    font-size: 2em;
   }
   .contenedor-novedades h2 {
-    font-size: 7px;
+    font-size: 1.5em;
   }
-  .video-novedades::before {
+  .contenedor-novedades .video-novedades::before {
     content: "";
     display: block;
     padding-top: 56.25%;
   }
   .contenedor-contacto {
     display: grid;
-    grid-template-areas: "texto9 " "subtexto9 " "formulario " "subtexto10 " "mapa " "subtexto11 " "horarios ";
-    grid-template-columns: 70%;
-    grid-template-rows: 100px 50px 300px 50px 900px 50px 300px;
+    grid-template-areas: "texto9" "subtexto9" "formulario" "subtexto10" "mapa" "subtexto11" "horarios";
+    grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     justify-content: center;
   }
-  .contenedor-contacto {
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-  }
   .contenedor-contacto h1 {
-    font-size: 10px;
+    font-size: 2em;
   }
   .contenedor-contacto h2 {
-    font-size: 7px;
+    font-size: 1.5em;
   }
-  .formulario-contacto {
+  .contenedor-contacto .formulario-contacto {
     width: 80%;
-    height: 80%;
+    height: auto;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
   }
-  .ubicacion-mapa {
+  .contenedor-contacto .ubicacion-mapa {
     align-items: center;
   }
-  .horarios-ubicacion {
-    font-size: 5px;
-  }
-  .whatsapp-container {
-    align-items: none;
-  }
-  .whatsapp-button {
-    bottom: 10px;
-    right: 10px;
-    left: auto;
-    transform: none;
+  .contenedor-contacto .horarios-ubicacion {
+    font-size: 0.8em;
   }
   .whatsapp-button img {
-    width: 40px;
-    height: auto;
+    width: 50px;
+    opacity: 0.5;
+  }
+  .whatsapp-button:hover img {
+    opacity: 0.7;
+    transform: scale(1.05);
   }
 }
 .contenedor-contacto {
@@ -205,18 +384,19 @@
   font-weight: bold;
   margin-bottom: 10px;
   color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
-  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  font-size: 45px; /* Tamaño de letra: px, em, rem, % */
   text-align: center;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin: 15px;
 }
 .contenedor-contacto .titulo-formulario {
   grid-area: subtexto9;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-contacto .formulario-contacto {
@@ -262,7 +442,7 @@
   grid-area: subtexto10;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-contacto .ubicacion-mapa {
@@ -272,7 +452,7 @@
   grid-area: subtexto11;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-contacto .horarios-ubicacion {
@@ -288,7 +468,7 @@
   display: grid;
   grid-template-areas: "texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1 " "foto1 foto1 foto1 foto1 foto1 foto1 foto1 foto1" "texto2 texto2 texto2 texto2 texto2 texto2 texto2 texto2" "logo1 logo2 logo3 logo4 logo5 logo6 logo7 logo8" "texto3 texto3 texto3 texto3 texto3 texto3 texto3 texto3" "sector1 sector1 sector1 sector1 sector1 sector1 sector1 sector1";
   grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10%;
-  grid-template-rows: 100px 500px 100px 100px 100px 700px;
+  grid-template-rows: auto auto auto auto auto auto;
   justify-items: center; /* define las filas */
   align-items: center; /* define las columnas */
   justify-content: center; /* centra el contenido horizontalmente */
@@ -301,26 +481,29 @@
   font-weight: bold; /* negrita */
   margin-bottom: 15px; /* margen inferior */
   color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
-  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  font-size: 45px; /* Tamaño de letra: px, em, rem, % */
   text-align: center;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin: 15px;
 }
 .contenedor-index img {
   width: 90%; /* ancho de la imagen */
   height: 90%; /* alto automático para mantener la proporción */
   border-radius: 10px; /* bordes redondeados */
+  margin: 15px;
 }
 .contenedor-index .imagen-frentenoche {
   grid-area: foto1; /* área de la cuadrícula */
+  border: red 2px solid; /* borde rojo de 2px */
 }
 .contenedor-index .titulo-marcas {
   grid-area: texto2;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-index .logo-marcas1 {
@@ -351,7 +534,8 @@
   grid-area: texto3;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
+  margin-bottom: 5px;
 }
 .contenedor-index .sectores1 {
   grid-area: sector1;
@@ -375,7 +559,7 @@
   display: grid;
   grid-template-areas: "texto6 texto6 texto6" "foto18 foto19 foto20" "subtexto8 subtexto8 subtexto8" "video1 video1 video1";
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 400px 200px 500px;
+  grid-template-rows: auto auto auto auto;
   justify-items: center;
   align-items: center;
   gap: 10px;
@@ -383,24 +567,23 @@
 }
 .contenedor-novedades .titulo-novedades {
   grid-area: texto6;
-  color: black;
-  text-align: center;
-  font-size: 1.875rem;
-  font-weight: bold;
-  margin-bottom: 0.9375rem;
   color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
-  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  font-size: 45px; /* Tamaño de letra: px, em, rem, % */
   text-align: center;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin: 15px;
 }
 .contenedor-novedades img {
-  width: 70%;
+  width: 100%;
   height: auto;
   border-radius: 0.625rem;
-  object-fit: cover;
+  border: red 2px solid;
+}
+.contenedor-novedades img:hover {
+  transform: rotate(20deg);
 }
 .contenedor-novedades .novedades-img1 {
   grid-area: foto18;
@@ -413,18 +596,20 @@
 }
 .contenedor-novedades .texto-novedades {
   grid-area: subtexto8;
-  color: black;
+  color: #000000;
   text-align: center;
-  font-size: 1.25rem;
-  margin-bottom: 0.3125rem;
+  font-size: 30px; /* tamaño de la fuente */
+  margin-bottom: 5px;
 }
 .contenedor-novedades .video-novedades {
   grid-area: video1;
   position: relative;
   width: 90%;
-  height: 90%;
   margin: 0 auto;
   max-width: 768px;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width * 100) */
+  height: 0; /* Importante: altura debe ser 0 */
+  overflow: hidden; /* Evita scrollbars innecesarios */
 }
 .contenedor-novedades .video-novedades iframe {
   position: absolute;
@@ -438,7 +623,7 @@
   display: grid;
   grid-template-areas: "texto4 texto4  " "subtexto1 subtexto1" "antiguo1 parrafo1" "subtexto2 subtexto2" "parrafo2 antiguo2" "subtexto3 subtexto3" "antiguo3 parrafo3";
   grid-template-columns: 40% 40%;
-  grid-template-rows: 200px 200px 400px 200px 400px 200px 400px;
+  grid-template-rows: auto auto auto auto auto auto auto;
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -447,29 +632,35 @@
   grid-area: texto4;
   color: rgb(0, 0, 0); /* color del texto */
   text-align: center; /* texto centrado */
-  font-size: 30px; /* tamaño de la fuente */
   font-weight: bold; /* negrita */
   margin-bottom: 15px; /* margen inferior */
-}
-.contenedor-historia .titulo-epocas1, .contenedor-historia .titulo-epocas3, .contenedor-historia .titulo-epocas2 {
-  grid-area: subtexto1;
-  color: #000000;
-  text-align: center;
-  font-size: 20px;
-  margin-bottom: 5px;
   color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
-  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  font-size: 45px; /* Tamaño de letra: px, em, rem, % */
   text-align: center;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin: 15px;
+}
+.contenedor-historia .titulo-epocas1, .contenedor-historia .titulo-epocas3, .contenedor-historia .titulo-epocas2 {
+  grid-area: subtexto1;
+  color: #000000;
+  text-align: center;
+  font-size: 30px; /* tamaño de la fuente */
+  margin-bottom: 5px;
 }
 .contenedor-historia img {
-  width: 70%; /* ancho de la imagen */
+  width: 100%; /* ancho de la imagen */
   height: 70%; /* alto automático para mantener la proporción */
   border-radius: 10px;
   margin: 10px;
+  border: red 2px solid;
+}
+.contenedor-historia img:hover {
+  transform: translate(5px, 10px); /* Aumenta el tamaño al pasar el mouse */
+  transition: transform 0.3s ease; /* Suaviza la transición */
+  border: rgb(0, 0, 0) 2px solid; /* Cambia el borde al pasar el mouse */
 }
 .contenedor-historia .imagen-historia1 {
   grid-area: antiguo1;
@@ -503,16 +694,21 @@
   display: grid;
   grid-template-areas: "texto5 texto5 texto5 texto5" "subtexto4 subtexto4 subtexto4 subtexto4" "foto2 foto3 foto4 foto5" "subtexto5 subtexto5 subtexto5 subtexto5" "foto6 foto7 foto8 foto9" "subtexto6 subtexto6 subtexto6 subtexto6" "foto10 foto11 foto12 foto13" "subtexto7 subtexto7 subtexto7 subtexto7" "foto14 foto15 foto16 foto17";
   grid-template-columns: 20% 20% 20% 20%;
-  grid-template-rows: 100px 50px 300px 50px 300px 50px 300px 50px 300px;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   justify-items: center;
   align-items: center;
   justify-content: center;
 }
 .contenedor-productos img {
-  width: 90%;
-  height: 90%;
+  max-width: 100%;
   border-radius: 10px;
-  margin: 7px;
+  margin: 15px;
+  border: red 2px solid;
+}
+.contenedor-productos img:hover {
+  transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+  transition: transform 0.3s ease; /* Suaviza la transición */
+  border: rgb(0, 0, 0) 2px solid; /* Cambia el borde al pasar el mouse */
 }
 .contenedor-productos .titulo-productos {
   grid-area: texto5;
@@ -522,18 +718,19 @@
   font-weight: bold;
   margin-bottom: 15px;
   color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
-  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  font-size: 45px; /* Tamaño de letra: px, em, rem, % */
   text-align: center;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin: 15px;
 }
 .contenedor-productos .titulo-sector1 {
   grid-area: subtexto4;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-productos .imagen-productos1 {
@@ -552,7 +749,7 @@
   grid-area: subtexto5;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-productos .imagen-productos5 {
@@ -571,7 +768,7 @@
   grid-area: subtexto6;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-productos .imagen-productos9 {
@@ -590,7 +787,7 @@
   grid-area: subtexto7;
   color: #000000;
   text-align: center;
-  font-size: 20px;
+  font-size: 30px; /* tamaño de la fuente */
   margin-bottom: 5px;
 }
 .contenedor-productos .imagen-productos13 {
@@ -665,9 +862,6 @@ footer {
   background-color: #000000;
   color: white; /* Cambiado a blanco para que sea visible sobre el fondo negro */
   text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
   width: 100%;
 }
 footer a {

@@ -20,7 +20,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* hace que el ancho y alto de los elementos incluya el padding y el borde */
-}
+   
+  }
 
  header{
        
@@ -34,8 +35,9 @@
     margin: 10px; /* margen alrededor del logo */
     display: block; /* hace que el logo se muestre como un bloque */
     margin-left: auto; /* centra el logo horizontalmente */}
-
+    
 }
+
 
 /* estilos de nav */
 nav {
@@ -86,9 +88,9 @@ footer {
   background-color: #000000;
   color: white; /* Cambiado a blanco para que sea visible sobre el fondo negro */
   text-align: center;
-  padding: 10px 0;
-  position: relative;
-  bottom: 0;
+
+  
+  
   width: 100%;
 
   a {
@@ -149,4 +151,5 @@ background-size: cover;}
     
     background-size: cover;
 }
+
 

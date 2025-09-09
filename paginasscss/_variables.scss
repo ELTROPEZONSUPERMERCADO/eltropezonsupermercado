@@ -2,22 +2,26 @@
 
 @mixin estilo-titulo {
   color: rgb(12, 23, 45); /* Puede ser rgba, hexadecimal, nombre o rgb */
-  font-size: 40px; /* Tamaño de letra: px, em, rem, % */
+  font-size: 45px; /* Tamaño de letra: px, em, rem, % */
   text-align: center;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   margin-bottom: 5%;
   margin-top: 5%;
+  margin: 15px;
 }
 
-@mixin alineacionimagen {  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+//@mixin alineacionimagen {  
+   // display: flex;
+   // flex-direction: row;
+    //justify-content: space-evenly;}
   
+
+@mixin estilo-subtitulo{
+        color: #000000;
+    text-align: center;
+    font-size: 30px; /* tamaño de la fuente */
+    margin-bottom: 5px;
 }
 
-@mixin estilopadre {
-   
-    font-family: 'Times New Roman', Times, serif;
-}
+

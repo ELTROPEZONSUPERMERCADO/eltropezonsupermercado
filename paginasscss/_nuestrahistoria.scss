@@ -16,7 +16,7 @@ grid-template-areas:
 ;
 grid-template-columns: 
 40% 40% ; 
-grid-template-rows: 200px 200px 400px 200px 400px 200px 400px;
+grid-template-rows: auto auto auto auto auto auto auto;
 justify-items: center; 
 align-items: center; 
 justify-content: center; 
@@ -25,27 +25,34 @@ justify-content: center;
     grid-area: texto4;
     color: rgb(0, 0, 0); /* color del texto */
     text-align: center; /* texto centrado */
-    font-size: 30px; /* tamaño de la fuente */
+   
     font-weight: bold; /* negrita */
     margin-bottom: 15px; /* margen inferior */
+     @include estilo-titulo;
    
 }
 .titulo-epocas1{
    
  grid-area: subtexto1;
-    color: #000000;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 5px;
- @include estilo-titulo;
+ 
+    @include estilo-subtitulo;
+
 }
 img {
-    width: 70%; /* ancho de la imagen */
+    width: 100%; /* ancho de la imagen */
     height: 70%; /* alto automático para mantener la proporción */
     border-radius: 10px; 
     margin: 10px; 
+    border: red 2px solid;
+
 }
-.imagen-historia1 {
+img:hover {
+    transform: translate(5px, 10px); /* Aumenta el tamaño al pasar el mouse */
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    border: rgb(0, 0, 0) 2px solid; /* Cambia el borde al pasar el mouse */
+
+}
+    .imagen-historia1 {
     grid-area: antiguo1;
 }
 .contenedor-historia p {
@@ -58,7 +65,7 @@ img {
 }
 
 .titulo-epocas2{
-   @extend .titulo-epocas1;
+    @extend .titulo-epocas1;
  grid-area: subtexto2;
 
 

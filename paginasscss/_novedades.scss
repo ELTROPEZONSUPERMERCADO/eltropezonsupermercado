@@ -10,7 +10,7 @@
     "subtexto8 subtexto8 subtexto8"
     "video1 video1 video1";
   grid-template-columns: 30% 30% 30%; // Usamos fr para mejor distribución
-  grid-template-rows: 200px 400px 200px 500px;  // 'auto' se ajusta al contenido
+  grid-template-rows: auto auto auto auto;  // 'auto' se ajusta al contenido
   justify-items: center;
   align-items: center;
   gap: 10px; // Espacio entre elementos (más moderno que márgenes individuales)
@@ -18,19 +18,20 @@
 
   .titulo-novedades {
     grid-area: texto6;
-    color: black;
-    text-align: center;
-    font-size: 1.875rem;  // 30px; (Usar rem para accesibilidad)
-    font-weight: bold;
-    margin-bottom: 0.9375rem; // 15px;  (Usar rem para accesibilidad)
+ 
+   
      @include estilo-titulo;
   }
 
   img {
-    width: 70%; // Ocupa todo el espacio disponible en su celda
+    width: 100%; // Ocupa todo el espacio disponible en su celda
     height: auto; // Mantiene la proporción
     border-radius: 0.625rem; // 10px; (Usar rem para accesibilidad)
-    object-fit: cover;  // Evita distorsión de la imagen
+    border: red 2px solid;
+  }
+  img:hover {
+    transform: rotate(20deg); // Efecto de zoom al pasar el mouse
+    
   }
 
   .novedades-img1 {
@@ -47,27 +48,27 @@
 
   .texto-novedades {
     grid-area: subtexto8;
-    color: black;
-    text-align: center;
-    font-size: 1.25rem; // 20px; (Usar rem para accesibilidad)
-    margin-bottom: 0.3125rem; // 5px;  (Usar rem para accesibilidad)
+    @include estilo-subtitulo;
   }
 
   .video-novedades {
     grid-area: video1;
     position: relative;
     width: 90%;
-    height: 90%;
     margin: 0 auto;
     max-width: 768px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width * 100) */
+    height: 0; /* Importante: altura debe ser 0 */
+    overflow: hidden; /* Evita scrollbars innecesarios */
+}
 
-    iframe {
-      position: absolute; //cambie de relative a absolute
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-  }
+.video-novedades iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  
 }
 
