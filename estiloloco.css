@@ -1,0 +1,21 @@
+.image-container {
+      position: relative; /* Para posicionar el cuadrado dentro */
+      display: inline-block; /* Permite que el contenedor se ajuste al tamaño de la imagen */
+    }
+
+    .image-container img {
+      display: block; /* Elimina el espacio adicional debajo de la imagen */
+    }
+
+    .sell-square {
+      position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+      top: 10px;      /* Ajusta la distancia desde la parte superior */
+      left: 10px;     /* Ajusta la distancia desde la izquierda */
+      background-color: rgba(255, 0, 0, 0.7); /* Fondo rojo semi-transparente */
+      color: white;          /* Texto blanco */
+      padding: 5px 10px;    /* Espacio alrededor del texto */
+      border-radius: 5px;   /* Bordes redondeados */
+      font-size: 16px;       /* Tamaño de la fuente */
+      font-weight: bold;    /* Texto en negrita */
+      cursor: pointer;    /* Cambia el cursor al pasar por encima */
+    }
