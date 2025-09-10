@@ -233,6 +233,18 @@
     h2 {
       font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
     }
+    @media (max-width: 480px) {
+  .contenedor-producto {
+    width: 90%; // Ocupa casi todo el ancho en móviles
+    margin: 5px auto; // Centrado horizontal
+    padding: 5px;
+  }
+
+  #boton-vender {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+}
 
     .video-novedades::before {
       content: "";
@@ -512,6 +524,12 @@
     h2 {
       font-size: 1.5em;
     }
+
+ 
+      .contenedor-producto {
+    width: 250px; // Ajusta para pantallas más pequeñas
+    margin: 10px;
+  }
 
     .video-novedades::before {
       content: "";

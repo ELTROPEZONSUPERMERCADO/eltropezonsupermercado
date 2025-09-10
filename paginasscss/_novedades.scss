@@ -22,12 +22,18 @@
    
      @include estilo-titulo;
   }
-
+.contenedor-imagennovedades {
+  width: auto; // Ajusta según el diseño
+  height: auto; // Ajusta según el diseño 
+  border: red 1px   solid  ;
+  padding: 10px;
+  margin: 20px;
+  text-align: center; 
   img {
     width: 100%; // Ocupa todo el espacio disponible en su celda
     height: auto; // Mantiene la proporción
     border-radius: 0.625rem; // 10px; (Usar rem para accesibilidad)
-    border: red 2px solid;
+   
   }
   img:hover {
     transform: rotate(20deg); // Efecto de zoom al pasar el mouse
@@ -46,6 +52,19 @@
   .novedades-img3 {
     grid-area: foto20;
   }
+  #boton-vendernovedades {
+    background-color: green;
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: black;
+    }
+  }
+}
 
   .texto-novedades {
     grid-area: subtexto8;
