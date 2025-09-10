@@ -585,6 +585,32 @@
 .contenedor-novedades img:hover {
   transform: rotate(20deg);
 }
+.contenedor-novedades .contenedor-imagennovedades {
+  position: relative;
+  width: 300px;
+  margin: 20px auto;
+}
+.contenedor-novedades .contenedor-imagennovedades #miImagen {
+  width: 100%;
+  border: 5px solid red;
+  box-sizing: border-box;
+  display: block;
+}
+.contenedor-novedades .contenedor-imagennovedades #botonComprar {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.contenedor-novedades .contenedor-imagennovedades #botonComprar:hover {
+  background-color: #27ae60;
+}
 .contenedor-novedades .novedades-img1 {
   grid-area: foto18;
 }
