@@ -33,41 +33,7 @@
     transform: rotate(20deg); // Efecto de zoom al pasar el mouse
     
   }
-$color-principal: #3498db;
-$color-boton: #2ecc71;
-$color-boton-hover: #27ae60;
-$espacio-boton: 10px;
 
-.contenedor-imagennovedades {
-  position: relative;
-  width: 300px;
-  margin: 20px auto;
-
-  #miImagen {
-    width: 100%;
-    border: 5px solid red;
-    box-sizing: border-box;
-    display: block; // Elimina espacio debajo de la imagen
-  }
-  
-
-  #botonComprar {
-    position: absolute;
-    bottom: $espacio-boton;
-    right: $espacio-boton;
-    background-color: $color-boton;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-
-    &:hover { // Utilizando el selector '&' para "botonComprar:hover"
-      background-color: $color-boton-hover;
-    }
-  }
-}
 
   .novedades-img1 {
     grid-area: foto18;
