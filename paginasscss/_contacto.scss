@@ -1,10 +1,13 @@
 @use "./variables.scss" as*;
 @use "./mediaq.scss" as*;
 
+$base-center: center;
 
 
-
+@media (min-width: 768px)
+{
 .contenedor-contacto {
+    background-color: burlywood;
     display: grid;
     grid-template-areas:
       "texto9 texto9 texto9"
@@ -17,14 +20,14 @@
 
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 200px 100px 400px 100px 400px 20px 200px;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
+    justify-items: $base-center;
+    align-items: $base-center;
+    justify-content: $base-center;
 
     .titulo-contacto {
         grid-area: texto9;
         color: rgb(0, 0, 0);
-        text-align: center;
+        text-align: $base-center;
         font-size: 30px;
         font-weight: bold;
         margin-bottom: 10px;
@@ -68,7 +71,7 @@
             }
 
             input[type="submit"] {
-                background-color: #4CAF50;
+                background-color:burlywood;
                 color: white;
                 padding: 10px 15px;
                 border: none;
@@ -105,4 +108,95 @@
             padding: 0;       /* Elimina el relleno predeterminado de la lista */
         }
     }
+}}
+
+@media (max-width: 480px) {
+    .contenedor-contacto {
+         background-color:burlywood;
+    display: grid;
+    grid-template-areas:
+      "texto9"
+      "subtexto9"
+      "formulario"
+      "subtexto10"
+      "mapa"
+      "subtexto11"
+      "horarios";
+
+    grid-template-columns: 1fr; // Una sola columna
+ 
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 2em; //Utiliza em o rem para tamaños responsivos
+    }
+
+    h2 {
+      font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
+    }
+
+    .formulario-contacto {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .ubicacion-mapa {
+      align-items: center;
+    }
+
+    .horarios-ubicacion {
+      font-size: 0.8em; //Utiliza em o rem para tamaños responsivos
+    }
+  }
 }
+
+@media (min-width: 481px) {
+
+    .contenedor-contacto {
+         background-color: burlywood;
+    display: grid;
+    grid-template-areas:
+      "texto9"
+      "subtexto9"
+      "formulario"
+      "subtexto10"
+      "mapa"
+      "subtexto11"
+      "horarios";
+
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+    }
+
+    .formulario-contacto {
+      width: 80%;
+      height: auto;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+    }
+
+    .ubicacion-mapa {
+      align-items: center;
+    }
+
+    .horarios-ubicacion {
+      font-size: 0.8em;
+    }
+  }}

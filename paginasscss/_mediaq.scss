@@ -70,105 +70,23 @@
   }
 }
 
-  .contenedor-index {
-    grid-template-areas:
-      "texto1"
-      "foto1"
-      "texto2"
-      "logo1 logo2 logo3 logo4"  // Reduje el número de logos para que quepan mejor
-      "logo5 logo6 logo7 logo8"
-      "texto3"
-      "sector1"
-      "sector2";
-
-    grid-template-columns: 1fr;  // Una sola columna
-    
-    display: grid;
-
-    h1 {
-      font-size: 2em; //Utiliza em o rem para tamaños responsivos
+   .whatsapp-button img {
+        width: 50px; /* Tamaño más pequeño en pantallas pequeñas */
+        opacity: 0.5; /* Transparencia del 50% en pantallas pequeñas */
     }
 
-    h2 {
-      font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
+    .whatsapp-button:hover img {
+      opacity: 0.7; /* Un poco más visible al pasar el ratón */
+      transform: scale(1.05); /* Reducimos el aumento al pasar el mouse */
     }
-
-    img {
-      width: 80%; // Aumenta el ancho de la imagen para ocupar más espacio
-      height: auto; // Mantiene la proporción
-      border-radius: 10px;
-    }
-
-    .imagen-frentenoche {
-      grid-area: foto1;
-      width: 80%; // Aumenta el ancho de la imagen para ocupar más espacio
-      height: auto; // Mantiene la proporción
-    }
-  }
-
-  .contenedor-historia {
-    display: grid;
-    grid-template-areas:
-      "texto4"
-      "subtexto1"
-      "antiguo1"
-      "parrafo1"
-      "subtexto2"
-      "parrafo2"
-      "antiguo2"
-      "subtexto3"
-      "antiguo3"
-      "parrafo3";
-
-    grid-template-columns: 1fr;  // Una sola columna
   
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
 
-    h1 {
-      font-size: 2em; //Utiliza em o rem para tamaños responsivos
-      margin-bottom: 1em;
-      margin-top: 0.5em;
-    }
 
-    h2 {
-      font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
+ 
 
-    img {
-      width: 80%; // Aumenta el ancho de la imagen para ocupar más espacio
-      height: auto; // Mantiene la proporción
-      border-radius: 10px;
-      margin: 0.5em;
-    }
 
-    p {
-      margin: 0.5em;
-      font-size: 1em; //Utiliza em o rem para tamaños responsivos
-     font-size: 10px;
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
-
-    .titulo-historia {
-      grid-area: texto4;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      font-size: 2.5em; //Utiliza em o rem para tamaños responsivos
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-  }
-
-  .text-bg-warning p-3 {
-    margin: 0;
-    padding: 0;
-
-  }
-  .contenedor-productos {
+    @media (max-width: 480px) {
+       .contenedor-productos {
     display: grid;
     grid-template-areas:
       "texto5"
@@ -208,104 +126,16 @@
     }
   
   }
-
-  .contenedor-novedades {
-    display: grid;
-    grid-template-areas:
-      "texto6"
-      "foto18"
-      "foto19"
-      "foto20"
-      "subtexto8"
-      "video1";
-
-    grid-template-columns: 1fr; // Una sola columna
- 
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    padding-block-end: 5pt;
-
-    h1 {
-      font-size: 2em; //Utiliza em o rem para tamaños responsivos
-    }
-
-    h2 {
-      font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
-    }
-    @media (max-width: 480px) {
   .contenedor-producto {
     width: 90%; // Ocupa casi todo el ancho en móviles
     margin: 5px auto; // Centrado horizontal
     padding: 5px;
   }
 
-  #boton-vender {
-    padding: 8px 16px;
-    font-size: 0.9em;
-  }
-}
-
-    .video-novedades::before {
-      content: "";
-      display: block;
-      padding-top: 56.25%;
-    }
+  
   }
 
-  .contenedor-contacto {
-    display: grid;
-    grid-template-areas:
-      "texto9"
-      "subtexto9"
-      "formulario"
-      "subtexto10"
-      "mapa"
-      "subtexto11"
-      "horarios";
-
-    grid-template-columns: 1fr; // Una sola columna
- 
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      font-size: 2em; //Utiliza em o rem para tamaños responsivos
-    }
-
-    h2 {
-      font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
-    }
-
-    .formulario-contacto {
-      width: 80%;
-      height: auto;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-    }
-
-    .ubicacion-mapa {
-      align-items: center;
-    }
-
-    .horarios-ubicacion {
-      font-size: 0.8em; //Utiliza em o rem para tamaños responsivos
-    }
-  }
-
-  .whatsapp-button img {
-        width: 50px; /* Tamaño más pequeño en pantallas pequeñas */
-        opacity: 0.5; /* Transparencia del 50% en pantallas pequeñas */
-    }
-
-    .whatsapp-button:hover img {
-      opacity: 0.7; /* Un poco más visible al pasar el ratón */
-      transform: scale(1.05); /* Reducimos el aumento al pasar el mouse */
-    }
-  }
+  
 
 
 
@@ -366,96 +196,9 @@
     width: 25px;
   }
 
-  .contenedor-index {
-    grid-template-areas:
-      "texto1"
-      "foto1"
-      "texto2"
-      "logo1 logo2 logo3 logo4"
-      "logo5 logo6 logo7 logo8"
-      "texto3"
-      "sector1"
-      "sector2";
+  
 
-    grid-template-columns: 1fr;
-    display: grid;
-
-    h1 {
-      font-size: 2em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-
-    img {
-      width: 80%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .imagen-frentenoche {
-      grid-area: foto1;
-      width: 80%;
-      height: auto;
-    }
-  }
-
-  .contenedor-historia {
-    display: grid;
-    grid-template-areas:
-      "texto4"
-      "subtexto1"
-      "antiguo1"
-      "parrafo1"
-      "subtexto2"
-      "parrafo2"
-      "antiguo2"
-      "subtexto3"
-      "antiguo3"
-      "parrafo3";
-
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 1em;
-      margin-top: 0.5em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
-
-    img {
-      width: 80%;
-      height: auto;
-      border-radius: 10px;
-      margin: 0.5em;
-    }
-
-    p {
-      margin: 0.5em;
-      font-size: 1em;
-      font-size: 10px;
-      margin-bottom: 1em;
-      margin-top: 1em;
-    }
-
-    .titulo-historia {
-      grid-area: texto4;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      font-size: 2.5em;
-      font-weight: bold;
-      margin-bottom: 0.5em;
-    }
-  }
+  
 
   .text-bg-warning p-3 {
     margin: 0;
@@ -501,84 +244,9 @@
     }
   }
 
-  .contenedor-novedades {
-    display: grid;
-    grid-template-areas:
-      "texto6"
-      "foto18"
-      "foto19"
-      "foto20"
-      "subtexto8"
-      "video1";
+  
 
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    padding-block-end: 5pt;
-
-    h1 {
-      font-size: 2em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-
- 
-      .contenedor-producto {
-    width: 250px; // Ajusta para pantallas más pequeñas
-    margin: 10px;
-  }
-
-    .video-novedades::before {
-      content: "";
-      display: block;
-      padding-top: 56.25%;
-    }
-  }
-
-  .contenedor-contacto {
-    display: grid;
-    grid-template-areas:
-      "texto9"
-      "subtexto9"
-      "formulario"
-      "subtexto10"
-      "mapa"
-      "subtexto11"
-      "horarios";
-
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      font-size: 2em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-
-    .formulario-contacto {
-      width: 80%;
-      height: auto;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      background-color: #f9f9f9;
-    }
-
-    .ubicacion-mapa {
-      align-items: center;
-    }
-
-    .horarios-ubicacion {
-      font-size: 0.8em;
-    }
-  }
+  
 
   .whatsapp-button img {
     width: 50px;
@@ -589,4 +257,4 @@
     opacity: 0.7;
     transform: scale(1.05);
   }
-}
+}}

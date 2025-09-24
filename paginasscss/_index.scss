@@ -2,10 +2,13 @@
 @use "./variables.scss" as*;
 @use "./mediaq.scss" as*;
 
+$base-center: center;
 
 
-
+@media (min-width: 768px)
+{
 .contenedor-index{
+background-color: burlywood;
 display: grid;
 grid-template-areas:
 "texto1 texto1 texto1 texto1 texto1 texto1 texto1 texto1 " 
@@ -18,9 +21,9 @@ grid-template-areas:
 ;
 grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% ; 
 grid-template-rows: auto auto auto auto auto auto;
-justify-items: center; /* define las filas */
-align-items: center; /* define las columnas */
-justify-content: center; /* centra el contenido horizontalmente */
+justify-items: $base-center; /* define las filas */
+align-items: $base-center; /* define las columnas */
+justify-content: $base-center; /* centra el contenido horizontalmente */
 
 
 .tituloprincipal {
@@ -29,7 +32,7 @@ justify-content: center; /* centra el contenido horizontalmente */
 
     grid-area: texto1;
     color: rgb(0, 0, 0); /* color del texto */
-    text-align: center; /* texto centrado */
+    text-align: $base-center; /* texto centrado */
     font-size: 30px; /* tamaño de la fuente */
     font-weight: bold; /* negrita */
     margin-bottom: 15px; /* margen inferior */
@@ -112,18 +115,19 @@ img {
 align-items:flex-start; /* alinea el contenido al inicio de la celda */
      display: flex; /* usa flexbox para alinear el contenido */
      flex-direction: column; /* organiza los elementos en una columna */
-     align-items: center; /* centra los elementos horizontalmente */
-     justify-content: center; /* centra los elementos verticalmente */
+     align-items: $base-center; /* centra los elementos horizontalmente */
+     justify-content: $base-center; /* centra los elementos verticalmente */
      width: 40%; /* ancho del sector */
      height: 40%; 
 
 .carousel-inner {
     width: 90%;
     height: 90%;
-    align-items: center;
+    align-items: $base-center;
 }
 
 }}
+}
 
 
 
@@ -133,9 +137,107 @@ align-items:flex-start; /* alinea el contenido al inicio de la celda */
 
 
 
+@media (max-width: 480px) {
+
+.contenedor-index {
+   background-color: burlywood  ;
+    grid-template-areas:
+      "texto1"
+      "foto1"
+      "texto3"
+      "sector1"
+      "sector2 "
+      "texto2"
+      "logo1"
+      "logo2"
+      "logo3"
+      "logo4"
+      "logo5"
+      "logo6"
+       "logo7" 
+       "logo8";
+
+    grid-template-columns:1fr ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+
+    display: grid;
+    justify-items: $base-center;
+    align-items: $base-center;
+    justify-content: $base-center;
+    
+
+    
+
+    img {
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .imagen-frentenoche {
+      grid-area: foto1;
+      width: 200px;
+      height: auto;
+ 
+    border: red 2px solid; /* borde rojo de 2px */
+
+    }
+  }
 
 
 
+}
 
+@media (max-width: 768px) {
+
+.contenedor-index {
+   background-color: burlywood  ;
+    grid-template-areas:
+      "texto1"
+      "foto1"
+      "texto3"
+      "sector1"
+      "sector2 "
+      "texto2"
+      "logo1"
+      "logo2"
+      "logo3"
+      "logo4"
+      "logo5"
+      "logo6"
+       "logo7" 
+       "logo8";
+
+    grid-template-columns:1fr ;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+
+    display: grid;
+    justify-items: $base-center;
+    align-items: $base-center;
+    justify-content: $base-center;
+    
+
+    
+
+    img {
+      width: auto;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .imagen-frentenoche {
+      grid-area: foto1;
+      width: 200px;
+      height: auto;
+
+    border: red 2px solid; /* borde rojo de 2px */
+
+     
+    }
+  }
+
+
+
+}
 
 
