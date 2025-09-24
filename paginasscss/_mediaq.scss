@@ -85,52 +85,7 @@
  
 
 
-    @media (max-width: 480px) {
-       .contenedor-productos {
-    display: grid;
-    grid-template-areas:
-      "texto5"
-      "subtexto4"
-      "foto2"
-      "foto3"
-      "foto4"
-      "foto5"
-      "subtexto5"
-      "foto6"
-      "foto7"
-      "foto8"
-      "foto9"
-      "subtexto6"
-      "foto10"
-      "foto11"
-      "foto12"
-      "foto13"
-      "subtexto7"
-      "foto14"
-      "foto15"
-      "foto16"
-      "foto17";
-
-    grid-template-columns: 1fr; // Una sola columna
    
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      font-size: 2em; //Utiliza em o rem para tamaños responsivos
-    }
-
-    h2 {
-      font-size: 1.5em; //Utiliza em o rem para tamaños responsivos
-    }
-  
-  }
-  .contenedor-producto {
-    width: 90%; // Ocupa casi todo el ancho en móviles
-    margin: 5px auto; // Centrado horizontal
-    padding: 5px;
-  }
 
   
   }
@@ -205,44 +160,7 @@
     padding: 0;
   }
 
-  .contenedor-productos {
-    display: grid;
-    grid-template-areas:
-      "texto5"
-      "subtexto4"
-      "foto2"
-      "foto3"
-      "foto4"
-      "foto5"
-      "subtexto5"
-      "foto6"
-      "foto7"
-      "foto8"
-      "foto9"
-      "subtexto6"
-      "foto10"
-      "foto11"
-      "foto12"
-      "foto13"
-      "subtexto7"
-      "foto14"
-      "foto15"
-      "foto16"
-      "foto17";
-
-    grid-template-columns: 1fr;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-
-    h1 {
-      font-size: 2em;
-    }
-
-    h2 {
-      font-size: 1.5em;
-    }
-  }
+  
 
   
 
@@ -257,4 +175,4 @@
     opacity: 0.7;
     transform: scale(1.05);
   }
-}}
+}
