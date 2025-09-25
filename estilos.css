@@ -396,27 +396,75 @@
     border: red 2px solid; /* borde rojo de 2px */
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
   .contenedor-index {
     background-color: burlywood;
-    grid-template-areas: "texto1" "foto1" "texto3" "sector1" "sector2 " "texto2" "logo1" "logo2" "logo3" "logo4" "logo5" "logo6" "logo7" "logo8";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
-    display: grid;
+    grid-template-areas: "texto1 texto1" "foto1 foto1" "texto2 texto2" "logo1 logo 2" "logo3 logo4" "logo5 logo6" "logo7 logo8" "texto3 texto3" "sector1 sector1" "sector2 sector2";
+    grid-template-columns: 40% 40%;
     justify-items: center;
     align-items: center;
     justify-content: center;
   }
-  .contenedor-index img {
-    width: auto;
-    height: auto;
-    border-radius: 10px;
+  .contenedor-index h1 {
+    font-size: 2em;
+  }
+  .contenedor-index h2 {
+    font-size: 1.5em;
+  }
+  .contenedor-index .tituloprincipal {
+    grid-area: texto1;
   }
   .contenedor-index .imagen-frentenoche {
     grid-area: foto1;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border: red 2px solid; /* borde rojo de 2px */
+  }
+  .contenedor-index .titulo-marcas {
+    grid-area: texto2;
+  }
+  .contenedor-index .logo-marcas1 {
+    grid-area: logo1;
+  }
+  .contenedor-index .logo-marcas2 {
+    grid-area: logo2;
+  }
+  .contenedor-index .logo-marcas3 {
+    grid-area: logo3;
+  }
+  .contenedor-index .logo-marcas4 {
+    grid-area: logo4;
+  }
+  .contenedor-index .logo-marcas5 {
+    grid-area: logo5;
+  }
+  .contenedor-index .logo-marcas6 {
+    grid-area: logo6;
+  }
+  .contenedor-index .logo-marcas7 {
+    grid-area: logo7;
+  }
+  .contenedor-index .logo-marcas8 {
+    grid-area: logo8;
+  }
+  .contenedor-index .titulo-local {
+    grid-area: texto3;
+  }
+  .contenedor-index .sectores1 {
+    grid-area: sector1;
+  }
+  .contenedor-index .sectores2 {
+    grid-area: sector2;
+  }
+  .contenedor-index img {
     width: 200px;
     height: auto;
-    border: red 2px solid; /* borde rojo de 2px */
+    border-radius: 10px;
+    margin: 10px 0;
+    border: red 2px solid;
   }
 }
 @media (min-width: 769px) {
